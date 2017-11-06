@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 //  таск для минификации
 gulp.task('css-libs', ['less'], function() {
-    return gulp.src('app/css/libs.css') // Выбираем файл для минификации
+    return gulp.src('app/css/style.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
@@ -65,10 +65,10 @@ gulp.task('clean', function() {
 });
 
 // продакшен
-gulp.task('build', ['clean', 'img', 'less','css-libs'], function() {
+gulp.task('build', ['clean', 'img', 'css-libs'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-            'app/css/main.css',
+            'app/css/*.min.css',
             'app/css/libs.min.css'
         ])
         .pipe(gulp.dest('dist/css'))
