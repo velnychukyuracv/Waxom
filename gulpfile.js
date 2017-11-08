@@ -41,9 +41,10 @@ gulp.task('css-libs', ['less'], function() {
 
 // таск для минификации HTML
 gulp.task('minify', function() {
-    gulp.src('app/*.html')
+    gulp.src('app/*.html')// Выбираем файл для минификации
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('app'))
+        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+        .pipe(gulp.dest('app'))// Выгружаем в папку app
 });
 
 // Наблюдение
@@ -72,15 +73,18 @@ gulp.task('clean', function() {
 });
 
 // продакшен
-gulp.task('build', ['clean', 'img', 'css-libs'], function() {
+gulp.task('build', ['clean', 'img', 'css-libs', 'minify'], function() {
 
-    var buildCss = gulp.src([ // Переносим библиотеки в продакшен
+    var buildCss = gulp.src([ // Переносим библиотеки css в продакшен
             'app/css/*.min.css',
 
         ])
         .pipe(gulp.dest('dist/css'))
 
-    var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
+    var buildHtml = gulp.src([ // Переносим библиотеки html в продакшен
+            'app/index.min.html',
+
+        ])
         .pipe(gulp.dest('dist'));
 
 });

@@ -2,53 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5697d06b-49bb-4657-a236-0bdd3f10d817" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/Devrlopment.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Waxom Hemepage.psd" afterPath="$PROJECT_DIR$/Waxom Hemepage.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/Devrlopment.png" afterPath="$PROJECT_DIR$/dist/img/Devrlopment.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/arrow.png" afterPath="$PROJECT_DIR$/dist/img/arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/arrow_button.png" afterPath="$PROJECT_DIR$/dist/img/arrow_button.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/arrowhover.png" afterPath="$PROJECT_DIR$/dist/img/arrowhover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/bg.jpg" afterPath="$PROJECT_DIR$/dist/img/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/bg_foto.png" afterPath="$PROJECT_DIR$/dist/img/bg_foto.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/bg_logo.png" afterPath="$PROJECT_DIR$/dist/img/bg_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/blog_posts.png" afterPath="$PROJECT_DIR$/dist/img/blog_posts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/cart.png" afterPath="$PROJECT_DIR$/dist/img/cart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/clients.png" afterPath="$PROJECT_DIR$/dist/img/clients.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/cups.png" afterPath="$PROJECT_DIR$/dist/img/cups.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/customization.png" afterPath="$PROJECT_DIR$/dist/img/customization.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/design.png" afterPath="$PROJECT_DIR$/dist/img/design.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo1.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo2.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo3.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo4.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/iphone.png" afterPath="$PROJECT_DIR$/dist/img/iphone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/launched.png" afterPath="$PROJECT_DIR$/dist/img/launched.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/likes.png" afterPath="$PROJECT_DIR$/dist/img/likes.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/link.png" afterPath="$PROJECT_DIR$/dist/img/link.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo.png" afterPath="$PROJECT_DIR$/dist/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_barber.png" afterPath="$PROJECT_DIR$/dist/img/logo_barber.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_delicious.png" afterPath="$PROJECT_DIR$/dist/img/logo_delicious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_designers.png" afterPath="$PROJECT_DIR$/dist/img/logo_designers.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_poyal.png" afterPath="$PROJECT_DIR$/dist/img/logo_poyal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_short.png" afterPath="$PROJECT_DIR$/dist/img/logo_short.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/marketing.png" afterPath="$PROJECT_DIR$/dist/img/marketing.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/project1.jpg" afterPath="$PROJECT_DIR$/dist/img/project1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/project2.jpg" afterPath="$PROJECT_DIR$/dist/img/project2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/project3.jpg" afterPath="$PROJECT_DIR$/dist/img/project3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/screen1.jpg" afterPath="$PROJECT_DIR$/dist/img/screen1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/screen2.jpg" afterPath="$PROJECT_DIR$/dist/img/screen2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/screen3.jpg" afterPath="$PROJECT_DIR$/dist/img/screen3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/search_nav.png" afterPath="$PROJECT_DIR$/dist/img/search_nav.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/video_button.png" afterPath="$PROJECT_DIR$/dist/img/video_button.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/zoom.png" afterPath="$PROJECT_DIR$/dist/img/zoom.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/Devrlopment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.min.css" afterPath="$PROJECT_DIR$/app/css/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.css" afterPath="$PROJECT_DIR$/app/less/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.less" afterPath="$PROJECT_DIR$/app/less/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.min.css" afterPath="$PROJECT_DIR$/dist/css/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <ignored path="Waxom 01.11.2017.iws" />
@@ -74,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -83,7 +39,7 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.692307">
+            <state vertical-scroll-proportion="-483.19232">
               <caret line="739" column="26" selection-start-line="739" selection-start-column="26" selection-end-line="739" selection-end-column="26" />
               <folding />
             </state>
@@ -93,8 +49,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2513863">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.19778189">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -118,8 +74,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/css/style.css" />
         <option value="$PROJECT_DIR$/app/less/style.less" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
       </list>
     </option>
   </component>
@@ -139,6 +95,7 @@
               <dependency value="clean" />
               <dependency value="img" />
               <dependency value="css-libs" />
+              <dependency value="minify" />
             </dependencies>
             <task-name>build</task-name>
           </GulpTaskState>
@@ -162,6 +119,9 @@
           </GulpTaskState>
           <GulpTaskState>
             <task-name>less</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>minify</task-name>
           </GulpTaskState>
           <GulpTaskState>
             <dependencies>
@@ -221,20 +181,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Waxom 01.11.2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Waxom 01.11.2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Waxom 01.11.2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,34 +598,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.692307">
-          <caret line="739" column="26" selection-start-line="739" selection-start-column="26" selection-end-line="739" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6025878">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-483.19232">
+          <caret line="739" column="26" selection-start-line="739" selection-start-column="26" selection-end-line="739" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2513863">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.19778189">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding />
         </state>
       </provider>
