@@ -621,6 +621,149 @@ article .blog_group .blog:hover .blog_caption p {
   width: 150px;
   height: 150px;
 }
+.info_blog {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #191919;
+  padding: 5% 0;
+}
+.info_blog .about {
+  width: 23.5%;
+  padding: 1.5%;
+}
+.info_blog .about p {
+  font-family: Montserrat, sans-serif;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  padding: 30px 0;
+}
+.info_blog .about a {
+  font-family: Montserrat, sans-serif;
+  color: #d1d1d1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+.info_blog .about a .arrow {
+  padding-bottom: 0 !important;
+}
+.info_blog .about a:hover {
+  color: #545454;
+}
+.info_blog .recent_posts {
+  width: 23.5%;
+  padding: 1.5%;
+}
+.info_blog .recent_posts h4 {
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 26px;
+  padding-top: 15px;
+}
+.info_blog .recent_posts .posts_blog {
+  padding: 15px 0;
+  border-bottom: 1px solid #252525;
+}
+.info_blog .recent_posts .posts_blog h6 {
+  font-family: Montserrat, sans-serif;
+  color: #363636;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.info_blog .recent_posts .posts_blog a {
+  font-family: Montserrat, sans-serif;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+}
+.info_blog .recent_posts .posts_blog:last-child {
+  border-bottom: none;
+}
+.info_blog .recent_posts .posts_blog:hover h6 {
+  color: #fff;
+}
+.info_blog .recent_posts .posts_blog:hover a {
+  color: #c7b299;
+}
+.info_blog .twitter {
+  width: 23.5%;
+  padding: 1.5%;
+}
+.info_blog .twitter h4 {
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 26px;
+  padding-top: 15px;
+}
+.info_blog .twitter .twitter_blog {
+  padding: 15px 0;
+  border-bottom: 1px solid #252525;
+}
+.info_blog .twitter .twitter_blog h6 {
+  font-family: Montserrat, sans-serif;
+  color: #363636;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  padding-top: 5px;
+}
+.info_blog .twitter .twitter_blog a {
+  font-family: Montserrat, sans-serif;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-decoration: none;
+}
+.info_blog .twitter .twitter_blog a span {
+  color: #00bff3;
+}
+.info_blog .twitter .twitter_blog:last-child {
+  border-bottom: none;
+}
+.info_blog .twitter .twitter_blog:last-child p span {
+  color: #959595;
+}
+.info_blog .widget {
+  width: 23.5%;
+  padding: 1.5%;
+}
+.info_blog .widget h4 {
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 26px;
+  padding-top: 15px;
+}
+.info_blog .widget .widget_photo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info_blog .widget .widget_photo img {
+  padding: 1%;
+}
 footer {
   background-color: #111111;
   display: flex;
@@ -631,9 +774,68 @@ footer .left {
   justify-content: flex-start;
   padding: 45px 0  53px 45px;
 }
+footer .left h5 {
+  font-family: Montserrat, sans-serif;
+  color: #545454;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 0 10px;
+  border-right: 1px solid #1e1e1e;
+}
+footer .left h5 span {
+  font-family: Montserrat, sans-serif;
+  color: #959595;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+footer .left a {
+  font-family: Montserrat, sans-serif;
+  color: #242424;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 0 10px;
+  text-decoration: none;
+  border-right: 1px solid #1e1e1e;
+}
+footer .left a:nth-child(3) {
+  font-family: Montserrat, sans-serif;
+  color: #c7b299;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+footer .left a:last-child {
+  border-right: none;
+}
+footer .left a:hover {
+  color: #959595;
+}
 footer .right {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   padding: 45px 30px 53px;
+}
+footer .right h5 {
+  font-family: Montserrat, sans-serif;
+  color: #545454;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 0 10px;
+}
+footer .right h5 a {
+  font-family: Montserrat, sans-serif;
+  color: #959595;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-decoration: none;
+}
+footer .right h5:first-child {
+  border-right: 1px solid #1e1e1e;
 }

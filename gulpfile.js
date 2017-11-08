@@ -7,6 +7,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+    htmlmin       = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
 
 
 //  таск Less+префиксы
@@ -38,6 +39,12 @@ gulp.task('css-libs', ['less'], function() {
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
+// таск для минификации HTML
+gulp.task('minify', function() {
+    gulp.src('app/*.html')
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('app'))
+});
 
 // Наблюдение
 gulp.task('watch', ['browser-sync'], function() {

@@ -669,6 +669,158 @@ article {
   }
 }
 
+.info_blog{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color:  #191919;
+  padding: 5% 0;
+  .about{
+    width: 23.5%;
+    padding: 1.5%;
+    p{
+      font-family: @font_Montserrat;
+      color:  #545454;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: left;
+      padding: 30px 0;
+    }
+    a{
+      font-family: @font_Montserrat;
+      color:  #d1d1d1;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      text-decoration: none;
+      text-transform: capitalize;
+      padding: 5px 0;
+      .arrow{
+        padding-bottom: 0 !important;
+      }
+    }
+    a:hover{
+      color:  #545454;
+    }
+
+  }
+  .recent_posts{
+    width: 23.5%;
+    padding: 1.5%;
+
+    h4{
+      font-family: @font_Raleway;
+      color:  #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 26px;
+      padding-top: 15px;
+    }
+    .posts_blog{
+      padding: 15px 0;
+      border-bottom: 1px solid #252525;
+      h6{
+        font-family: @font_Montserrat;
+        color:  #363636;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        padding-bottom: 5px;
+      }
+      a{
+        font-family: @font_Montserrat;
+        color:  #545454;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+      }
+    }
+    .posts_blog:last-child{
+      border-bottom: none;
+    }
+    .posts_blog:hover{
+      h6{
+        color:  #fff;
+      }
+      a{
+        color:  #c7b299;
+      }
+    }
+  }
+  .twitter{
+    width: 23.5%;
+    padding: 1.5%;
+    h4{
+      font-family: @font_Raleway;
+      color:  #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 26px;
+      padding-top: 15px;
+    }
+    .twitter_blog{
+      padding: 15px 0;
+      border-bottom: 1px solid #252525;
+      h6{
+        font-family: @font_Montserrat;
+        color:  #363636;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+        padding-top: 5px;
+      }
+      a{
+        font-family: @font_Montserrat;
+        color:  #545454;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-decoration: none;
+        span{
+          color:  #00bff3;
+        }
+      }
+    }
+
+    .twitter_blog:last-child{
+      border-bottom: none;
+      p{
+        span{
+          color: #959595;
+        }
+      }
+    }
+  }
+  .widget{
+    width: 23.5%;
+    padding: 1.5%;
+     h4{
+       font-family: @font_Raleway;
+       color:  #ffffff;
+       font-size: 24px;
+       font-weight: 700;
+       padding-bottom: 26px;
+       padding-top: 15px;
+     }
+    .widget_photo{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      img{
+        padding: 1%;
+      }
+    }
+  }
+}
+
+
 
 footer{
     background-color: #111111;
@@ -678,11 +830,71 @@ footer{
     display: flex;
     justify-content: flex-start;
     padding: 45px 0  53px 45px;
+    h5{
+      font-family: @font_Montserrat;
+      color:  #545454;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+      padding: 0 10px;
+      border-right: 1px solid #1e1e1e;
+      span{
+        font-family: @font_Montserrat;
+        color:  #959595;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+
+      }
+    }
+    a{
+      font-family: @font_Montserrat;
+      color:  #242424;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+      padding: 0 10px;
+      text-decoration: none;
+      border-right: 1px solid #1e1e1e;
+    }
+    a:nth-child(3){
+      font-family: @font_Montserrat;
+      color:  #c7b299;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: left;
+    }
+    a:last-child{
+      border-right: none;
+    }
+    a:hover{
+      color:  #959595;
+    }
   }
   .right{
     width: 50%;
     display: flex;
     justify-content: flex-end;
     padding: 45px 30px 53px;
+    h5{
+      font-family: @font_Montserrat;
+      color:  #545454;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+      padding: 0 10px;
+      a{
+        font-family: @font_Montserrat;
+        color:  #959595;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+        text-decoration: none;
+      }
+    }
+    h5:first-child{
+      border-right: 1px solid #1e1e1e;
+    }
   }
 }
