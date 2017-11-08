@@ -3,69 +3,84 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  min-width: 320px;
+}
 header {
   background-image: url("../img/bg_foto.png");
   background-repeat: no-repeat;
 }
-header nav {
+header .navigation {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
-header nav .logo a {
+header .navigation .logo {
+  width: 30%;
+}
+header .navigation .logo a {
   margin-left: 30px;
 }
-header nav .logo a img {
+header .navigation .logo a img {
   padding: 30px 30px;
 }
-header nav .logo a.logo_mobile {
+header .navigation .logo a.logoMobile {
   display: none;
 }
-header nav .navigation ul {
+header .navigation nav {
+  width: 60%;
+}
+header .navigation nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 50px 40px;
+  padding: 50px 10px;
 }
-header nav .navigation ul li a {
+header .navigation nav ul li a {
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   font-size: 14px;
   font-family: Montserrat, sans-serif;
   font-weight: 300;
   padding: 10px;
   color: #ffffff;
 }
-header nav .navigation ul li a:hover {
+header .navigation nav ul li a:hover {
   color: #ac9b87;
 }
-header hgroup {
+header .navigation .searchCart {
+  width: 10%;
+  padding: 45px 0;
+}
+header .navigation .searchCart a {
+  padding: 10px;
+}
+header hgroup div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 220px ;
+  margin-top: 220px;
 }
-header hgroup .logo_header {
+header hgroup div .logoHeader {
   display: none;
 }
-header hgroup h2 {
+header hgroup div h2 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 36px;
   font-weight: 500;
   text-align: center;
 }
-header hgroup h1 {
+header hgroup div h1 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 52px;
   font-weight: 700;
   text-align: center;
 }
-header hgroup p {
+header hgroup div p {
   font-family: Montserrat, sans-serif;
   color: #ffffff;
   font-size: 16px;
@@ -74,7 +89,7 @@ header hgroup p {
   text-align: center;
   margin-top: 30px;
 }
-header hgroup a {
+header hgroup div a {
   margin-bottom: 370px;
   border-radius: 5px;
   background-color: #998675;
@@ -93,7 +108,7 @@ header hgroup a {
   text-transform: uppercase;
   margin-top: 50px;
 }
-header hgroup a:hover {
+header hgroup div a:hover {
   background-color: #fff;
   color: #998675;
   border: 1px solid #998675;
@@ -141,23 +156,23 @@ aside section:hover p {
 aside section:hover hr {
   background-color: #c7b299;
 }
-section.screen_content {
+section.screenContent {
   width: 100%;
   background-color: #fbfaf8;
 }
-section.screen_content .contant {
+section.screenContent .contant {
   width: 80%;
   margin: 0 10%;
   text-align: center;
 }
-section.screen_content .contant h2 {
+section.screenContent .contant h2 {
   font-family: Raleway, sans-serif;
   color: #555555;
   font-size: 30px;
   font-weight: 600;
   padding-top: 83px;
 }
-section.screen_content .contant p {
+section.screenContent .contant p {
   font-family: Montserrat, sans-serif;
   color: #8c8c8c;
   font-size: 16px;
@@ -165,18 +180,18 @@ section.screen_content .contant p {
   line-height: 28px;
   margin: 23px 0 40px;
 }
-section.screen_content .screen {
+section.screenContent .screen {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-section.screen_content .screen .screen_left,
-section.screen_content .screen .screen_right {
+section.screenContent .screen .screenLeft,
+section.screenContent .screen .screenRight {
   width: 50%;
   height: 70%;
   padding: 123px 1% 0;
 }
-section.screen_content .screen .screen_active {
+section.screenContent .screen .screenActive {
   position: absolute;
   padding: 0 20%;
   margin-bottom: -50px;
@@ -293,48 +308,48 @@ section.screen_content .screen .screen_active {
   color: #fff;
   border: 1px solid #998675;
 }
-.portfolio .project_group {
+.portfolio .projectGroup {
   display: flex;
   flex-wrap: wrap ;
   justify-content: space-around;
 }
-.portfolio .project_group .project {
+.portfolio .projectGroup .project {
   background-color: #fbfaf8;
   margin: 15px;
 }
-.portfolio .project_group .project .picture {
+.portfolio .projectGroup .project .picture {
   position: relative;
 }
-.portfolio .project_group .project .picture .link {
+.portfolio .projectGroup .project .picture .link {
   position: absolute;
   top: 45%;
   left: 40%;
   display: none;
 }
-.portfolio .project_group .project .picture .zoom {
+.portfolio .projectGroup .project .picture .zoom {
   position: absolute;
   top: 45%;
   left: 55%;
   display: none;
 }
-.portfolio .project_group .project .caption {
+.portfolio .projectGroup .project .caption {
   margin: 30px 0 0 30px;
   position: relative;
 }
-.portfolio .project_group .project .caption img {
+.portfolio .projectGroup .project .caption img {
   position: absolute;
   top: -44px;
 }
-.portfolio .project_group .project .caption .arrowhover {
+.portfolio .projectGroup .project .caption .arrowHover {
   display: none;
 }
-.portfolio .project_group .project .caption h4 {
+.portfolio .projectGroup .project .caption h4 {
   font-family: Raleway, sans-serif;
   color: #c7b29a;
   font-size: 20px;
   font-weight: 500;
 }
-.portfolio .project_group .project .caption h5 {
+.portfolio .projectGroup .project .caption h5 {
   font-family: Montserrat, sans-serif;
   color: #d1d1d1;
   font-size: 16px;
@@ -343,33 +358,33 @@ section.screen_content .screen .screen_active {
   padding-top: 14px;
   padding-bottom: 27px;
 }
-.portfolio .project_group .project:hover {
+.portfolio .projectGroup .project:hover {
   background-color: #362f2d;
 }
-.portfolio .project_group .project:hover .picture img {
+.portfolio .projectGroup .project:hover .picture img {
   opacity: 0.5;
 }
-.portfolio .project_group .project:hover .picture .link {
+.portfolio .projectGroup .project:hover .picture .link {
   display: block;
   opacity: 1;
 }
-.portfolio .project_group .project:hover .picture .zoom {
+.portfolio .projectGroup .project:hover .picture .zoom {
   display: block;
   opacity: 1;
 }
-.portfolio .project_group .project:hover .caption h4 {
+.portfolio .projectGroup .project:hover .caption h4 {
   color: #a7a6a5;
 }
-.portfolio .project_group .project:hover .caption h5 {
+.portfolio .projectGroup .project:hover .caption h5 {
   color: #c7b299;
 }
-.portfolio .project_group .project:hover .caption .arrow {
+.portfolio .projectGroup .project:hover .caption .arrow {
   display: none;
 }
-.portfolio .project_group .project:hover .caption .arrowhover {
+.portfolio .projectGroup .project:hover .caption .arrowHover {
   display: block;
 }
-.portfolio a.load_more {
+.portfolio a.loadMore {
   border: 1px solid #998675;
   border-radius: 5px;
   background-color: #998675;
@@ -386,7 +401,7 @@ section.screen_content .screen .screen_active {
   margin: 10px 0 80px;
   padding: 19px 46px;
 }
-.portfolio a.load_more:hover {
+.portfolio a.loadMore:hover {
   background-color: #fff;
   color: #998675;
 }
@@ -414,31 +429,31 @@ section.screen_content .screen .screen_active {
   line-height: 28px;
   text-align: center;
 }
-.mobile_info {
+.mobileInfo {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.mobile_info .hand_mobile {
+.mobileInfo .handMobile {
   width: 45%;
   display: flex;
   justify-content: flex-end;
   padding-top: 79px;
 }
-.mobile_info .mobile_content {
+.mobileInfo .mobileContent {
   width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.mobile_info .mobile_content h3 {
+.mobileInfo .mobileContent h3 {
   font-family: Raleway, sans-serif;
   color: #555555;
   font-size: 30px;
   font-weight: 600;
 }
-.mobile_info .mobile_content p {
+.mobileInfo .mobileContent p {
   font-family: Montserrat, sans-serif;
   color: #8c8c8c;
   font-size: 16px;
@@ -447,16 +462,16 @@ section.screen_content .screen .screen_active {
   width: 85% ;
   padding: 40px 0;
 }
-.mobile_info .mobile_content ul {
+.mobileInfo .mobileContent ul {
   list-style-type: none;
   padding-left: 48px;
   list-style-position: outside;
 }
-.mobile_info .mobile_content ul .fa-check-circle {
+.mobileInfo .mobileContent ul .fa-check-circle {
   color: #c7b299;
   padding-right: 10px;
 }
-.mobile_info .mobile_content ul li {
+.mobileInfo .mobileContent ul li {
   font-family: Montserrat, sans-serif;
   color: #8c8c8c;
   font-size: 16px;
@@ -522,21 +537,21 @@ article p {
   text-align: center;
   margin: 15px 0 20px;
 }
-article .blog_group {
+article .blogGroup {
   display: flex;
   flex-wrap: wrap ;
   justify-content: space-around;
   margin: 5px 0 125px;
 }
-article .blog_group .blog {
+article .blogGroup .blog {
   background-color: #fff;
   margin: 15px;
   border: 1px solid #f8f8f8;
 }
-article .blog_group .blog .picture {
+article .blogGroup .blog .picture {
   position: relative;
 }
-article .blog_group .blog .picture .date {
+article .blogGroup .blog .picture .date {
   background-color: #363636;
   border-radius: 5px;
   position: absolute;
@@ -545,7 +560,7 @@ article .blog_group .blog .picture .date {
   display: flex;
   flex-direction: column;
 }
-article .blog_group .blog .picture .date h5 {
+article .blogGroup .blog .picture .date h5 {
   font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 24px;
@@ -554,7 +569,7 @@ article .blog_group .blog .picture .date h5 {
   margin: 9px 5px;
   text-align: center;
 }
-article .blog_group .blog .picture .date h6 {
+article .blogGroup .blog .picture .date h6 {
   font-family: Raleway, sans-serif;
   color: #fff;
   font-size: 12px;
@@ -565,17 +580,17 @@ article .blog_group .blog .picture .date h6 {
   text-transform: capitalize;
   background-color: #252525;
 }
-article .blog_group .blog .blog_caption {
+article .blogGroup .blog .blogCaption {
   margin: 30px 0 30px 30px;
 }
-article .blog_group .blog .blog_caption h4 {
+article .blogGroup .blog .blogCaption h4 {
   font-family: Raleway, sans-serif;
   color: #555555;
   font-size: 20px;
   font-weight: 500;
   text-align: left;
 }
-article .blog_group .blog .blog_caption p {
+article .blogGroup .blog .blogCaption p {
   font-family: Montserrat, sans-serif;
   color: #8c8c8c;
   font-size: 14px;
@@ -584,7 +599,7 @@ article .blog_group .blog .blog_caption p {
   text-align: left;
   margin: 20px 0 25px;
 }
-article .blog_group .blog .blog_caption a {
+article .blogGroup .blog .blogCaption a {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -595,25 +610,25 @@ article .blog_group .blog .blog_caption a {
   color: #c7b299;
   padding: 5px;
 }
-article .blog_group .blog:hover {
+article .blogGroup .blog:hover {
   background-color: #362f2d;
 }
-article .blog_group .blog:hover .picture img {
+article .blogGroup .blog:hover .picture img {
   opacity: 0.5;
 }
-article .blog_group .blog:hover .picture .date {
+article .blogGroup .blog:hover .picture .date {
   background-color: #c7b299;
 }
-article .blog_group .blog:hover .picture .date h6 {
+article .blogGroup .blog:hover .picture .date h6 {
   background-color: #a48d72;
 }
-article .blog_group .blog:hover .blog_caption h4 {
+article .blogGroup .blog:hover .blogCaption h4 {
   color: #c7b299;
 }
-article .blog_group .blog:hover .blog_caption p {
+article .blogGroup .blog:hover .blogCaption p {
   color: #fff;
 }
-.logo_partners {
+.logoPartners {
   background-image: url("../img/bg_logo.png");
   background-repeat: no-repeat;
   display: flex;
@@ -621,12 +636,12 @@ article .blog_group .blog:hover .blog_caption p {
   flex-wrap: wrap;
   padding: 0;
 }
-.logo_partners img {
+.logoPartners img {
   margin: 140px 0;
   width: 150px;
   height: 150px;
 }
-.info_blog {
+.infoBlog {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -634,11 +649,11 @@ article .blog_group .blog:hover .blog_caption p {
   background-color: #191919;
   padding: 5% 0;
 }
-.info_blog .about {
+.infoBlog .about {
   width: 23.5%;
   padding: 1.5%;
 }
-.info_blog .about p {
+.infoBlog .about p {
   font-family: Montserrat, sans-serif;
   color: #545454;
   font-size: 14px;
@@ -647,7 +662,7 @@ article .blog_group .blog:hover .blog_caption p {
   text-align: left;
   padding: 30px 0;
 }
-.info_blog .about a {
+.infoBlog .about a {
   font-family: Montserrat, sans-serif;
   color: #d1d1d1;
   font-size: 14px;
@@ -658,17 +673,17 @@ article .blog_group .blog:hover .blog_caption p {
   text-transform: capitalize;
   padding: 5px 0;
 }
-.info_blog .about a .arrow {
+.infoBlog .about a .arrow {
   padding-bottom: 0 !important;
 }
-.info_blog .about a:hover {
+.infoBlog .about a:hover {
   color: #545454;
 }
-.info_blog .recent_posts {
+.infoBlog .recentPosts {
   width: 23.5%;
   padding: 1.5%;
 }
-.info_blog .recent_posts h4 {
+.infoBlog .recentPosts h4 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 24px;
@@ -676,11 +691,11 @@ article .blog_group .blog:hover .blog_caption p {
   padding-bottom: 26px;
   padding-top: 15px;
 }
-.info_blog .recent_posts .posts_blog {
+.infoBlog .recentPosts .postsBlog {
   padding: 15px 0;
   border-bottom: 1px solid #252525;
 }
-.info_blog .recent_posts .posts_blog h6 {
+.infoBlog .recentPosts .postsBlog h6 {
   font-family: Montserrat, sans-serif;
   color: #363636;
   font-size: 12px;
@@ -689,7 +704,7 @@ article .blog_group .blog:hover .blog_caption p {
   text-align: left;
   padding-bottom: 5px;
 }
-.info_blog .recent_posts .posts_blog a {
+.infoBlog .recentPosts .postsBlog a {
   font-family: Montserrat, sans-serif;
   color: #545454;
   font-size: 14px;
@@ -698,20 +713,20 @@ article .blog_group .blog:hover .blog_caption p {
   text-align: left;
   text-decoration: none;
 }
-.info_blog .recent_posts .posts_blog:last-child {
+.infoBlog .recentPosts .postsBlog:last-child {
   border-bottom: none;
 }
-.info_blog .recent_posts .posts_blog:hover h6 {
+.infoBlog .recentPosts .postsBlog:hover h6 {
   color: #fff;
 }
-.info_blog .recent_posts .posts_blog:hover a {
+.infoBlog .recentPosts .postsBlog:hover a {
   color: #c7b299;
 }
-.info_blog .twitter {
+.infoBlog .twitter {
   width: 23.5%;
   padding: 1.5%;
 }
-.info_blog .twitter h4 {
+.infoBlog .twitter h4 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 24px;
@@ -719,11 +734,11 @@ article .blog_group .blog:hover .blog_caption p {
   padding-bottom: 26px;
   padding-top: 15px;
 }
-.info_blog .twitter .twitter_blog {
+.infoBlog .twitter .twitterBlog {
   padding: 15px 0;
   border-bottom: 1px solid #252525;
 }
-.info_blog .twitter .twitter_blog h6 {
+.infoBlog .twitter .twitterBlog h6 {
   font-family: Montserrat, sans-serif;
   color: #363636;
   font-size: 12px;
@@ -731,7 +746,7 @@ article .blog_group .blog:hover .blog_caption p {
   line-height: 20px;
   padding-top: 5px;
 }
-.info_blog .twitter .twitter_blog a {
+.infoBlog .twitter .twitterBlog a {
   font-family: Montserrat, sans-serif;
   color: #545454;
   font-size: 14px;
@@ -739,20 +754,20 @@ article .blog_group .blog:hover .blog_caption p {
   line-height: 20px;
   text-decoration: none;
 }
-.info_blog .twitter .twitter_blog a span {
+.infoBlog .twitter .twitterBlog a span {
   color: #00bff3;
 }
-.info_blog .twitter .twitter_blog:last-child {
+.infoBlog .twitter .twitterBlog:last-child {
   border-bottom: none;
 }
-.info_blog .twitter .twitter_blog:last-child p span {
+.infoBlog .twitter .twitterBlog:last-child p span {
   color: #959595;
 }
-.info_blog .widget {
+.infoBlog .widget {
   width: 23.5%;
   padding: 1.5%;
 }
-.info_blog .widget h4 {
+.infoBlog .widget h4 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 24px;
@@ -760,12 +775,12 @@ article .blog_group .blog:hover .blog_caption p {
   padding-bottom: 26px;
   padding-top: 15px;
 }
-.info_blog .widget .widget_photo {
+.infoBlog .widget .widgetPhoto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.info_blog .widget .widget_photo img {
+.infoBlog .widget .widgetPhoto img {
   margin: 1% 1%;
 }
 footer {
@@ -844,21 +859,31 @@ footer .right h5:first-child {
   border-right: 1px solid #1e1e1e;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  nav .logo a {
-    display: none;
+  .navigation .logo {
+    display: none !important;
   }
-  nav .navigation ul {
-    padding: 50px 15px !important;
+  .navigation nav {
+    width: 80% !important;
   }
-  nav .navigation ul li a {
+  .navigation nav ul {
+    padding: 50px 10px 0 10px !important;
+  }
+  .navigation nav ul li a {
     padding: 15px !important;
   }
-  hgroup {
-    margin-top: 200px !important;
+  .navigation .searchCart {
+    padding: 45px 10px 0 !important;
+    width: 20% !important;
   }
-  hgroup .logo_header {
+  hgroup {
+    margin-top: 150px !important;
+  }
+  hgroup .logoHeader {
     padding-bottom: 20px !important;
     display: block !important;
+  }
+  hgroup a {
+    margin-bottom: 250px !important;
   }
   aside {
     flex-wrap: wrap;
@@ -867,15 +892,67 @@ footer .right h5:first-child {
     width: 40%;
     padding: 5%;
   }
-  .info_blog {
+  .portfolio p {
+    font-size: 15px;
+  }
+  .mobileInfo .handMobile {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mobileInfo .handMobile img {
+    width: 90%;
+    height: 90%;
+    margin-top: 14.5%;
+  }
+  .mobileInfo .mobileContent {
+    width: 55%;
+  }
+  .mobileInfo .mobileContent h3 {
+    font-size: 25px;
+  }
+  .mobileInfo .mobileContent p {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  .mobileInfo .mobileContent ul li {
+    font-size: 14px;
+  }
+  .timer section h4 {
+    font-size: 40px;
+    padding: 20px 0 18px;
+  }
+  .timer section p {
+    padding-bottom: 20px;
+  }
+  article p {
+    font-size: 15px;
+  }
+  .infoBlog {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .info_blog .about,
-  .info_blog .recent_posts,
-  .info_blog .twitter,
-  .info_blog .widget {
+  .infoBlog .about,
+  .infoBlog .recentPosts,
+  .infoBlog .twitter,
+  .infoBlog .widget {
     width: 50%;
+    padding: 5%;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  footer .left {
+    width: 100%;
+    padding: 45px 0 10px 45px;
+  }
+  footer .right {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 45px 53px;
+  }
+  footer .right h5 {
+    padding: 0 67px 0 10px;
   }
 }
