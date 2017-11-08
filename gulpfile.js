@@ -40,7 +40,7 @@ gulp.task('css-libs', ['less'], function() {
 
 
 // Наблюдение
-gulp.task('watch', ['browser-sync', 'css-libs'], function() {
+gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('app/less/*.less', ['less']); // Наблюдение за sass файлами в папке less
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 });
@@ -48,14 +48,14 @@ gulp.task('watch', ['browser-sync', 'css-libs'], function() {
 
 // таск сжимаем изображения
 gulp.task('img', function() {
-    return gulp.src('./app/img/*') // Берем все изображения из app
+    return gulp.src('app/img/*') // Берем все изображения из app
         .pipe(imagemin({ // Сжимаем их с наилучшими настройками
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('./dist/img')); // Выгружаем на продакшен
+        .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
 
@@ -69,7 +69,7 @@ gulp.task('build', ['clean', 'img', 'css-libs'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
             'app/css/*.min.css',
-            'app/css/libs.min.css'
+
         ])
         .pipe(gulp.dest('dist/css'))
 

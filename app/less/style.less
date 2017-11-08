@@ -10,14 +10,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.wrapper{
-  min-width: 375px;
-  margin: 0 auto;
-  width: 948px;
-}
+
 
 header{
   background-image: url("../img/bg_foto.png");
+  background-repeat: no-repeat;
   nav{
     width: 100%;
     display: flex;
@@ -33,14 +30,15 @@ header{
     }
     .navigation{
       width: 70%;
-      display: flex;
+
       ul{
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         padding: 40px 40px;
          li{
-           padding: 10px 10px;
+
            a{
              text-decoration: none;
              text-align: left;
@@ -58,7 +56,7 @@ header{
 
     }
   }
-  .header_container{
+  hgroup{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +76,7 @@ header{
       font-weight: 700;
       text-align: center;
     }
-    h3{
+    p{
       font-family: @font_Montserrat;
       color:  @color_text;
       font-size: @font_size;
@@ -113,6 +111,8 @@ header{
     }
   }
 }
+
+
 aside{
   display: flex;
   justify-content: space-around;
@@ -121,6 +121,7 @@ aside{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 80px 30px;
     h4{
       font-family: @font_Raleway;
@@ -154,6 +155,8 @@ aside{
     background-color: #c7b299;
   }
 }
+
+
 section.screen_content{
   width: 100%;
   background-color:#fbfaf8;
@@ -196,9 +199,12 @@ section.screen_content{
   }
 }
 
+
 .wordpress {
   background-image:  url("../img/bg.png");
-   .left {
+  padding: 0;
+  display: flex;
+  .left {
      width: 50%;
      text-align: left;
      padding-top: 50px;
@@ -251,6 +257,168 @@ section.screen_content{
    }
  }
 
+
+
+.portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2{
+    font-family: @font_Raleway;
+    color:  #555555;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 80px 0 10px;
+  }
+  p{
+    font-family: @font_Montserrat;
+    color:  #8c8c8c;
+    font-size: @font_size;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .button{
+    display: inline-flex;
+    margin: 5px 0;
+    a{
+      background-color:  #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-family: @font_Montserrat;
+      color:  #8c8c8c;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 21px;
+      text-transform: capitalize;
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 10px 5px;
+    }
+    a:first-child{
+      padding: 10px 28px;
+    }
+    a:hover{
+      background-color:  #998675;
+      color: #fff;
+      border: 1px solid #998675;
+    }
+  }
+
+  .project_group{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+     .project{
+        background-color: #fbfaf8;
+        margin: 15px;
+        .picture{
+          position: relative;
+          .link{
+            position: absolute;
+            top: 45%;
+            left: 40%;
+            display: none;
+
+          }
+          .zoom{
+            position: absolute;
+            top: 45%;
+            left: 55%;
+            display: none;
+          }
+        }
+        .caption{
+          margin: 30px 0 0 30px;
+          position: relative;
+          img{
+            position: absolute;
+            top: -44px;
+          }
+          .arrowhover{
+            display: none;
+          }
+          h4{
+            font-family: @font_Raleway;
+            color:  #c7b29a;
+            font-size: 20px;
+            font-weight: 500;
+
+          }
+          h5{
+            font-family: @font_Montserrat;
+            color:  #d1d1d1;
+            font-size: @font_size;
+            font-weight: 300;
+            line-height: 20px;
+            padding-top: 14px;
+            padding-bottom: 27px;
+
+          }
+        }
+      }
+      .project:hover{
+        background-color: #362f2d;
+        .picture {
+          img{
+            opacity: 0.5;
+          }
+          .link {
+            display: block;
+            opacity: 1;
+          }
+          .zoom {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .caption{
+           h4{
+             color: #a7a6a5;
+           }
+          h5{
+            color: #c7b299;
+          }
+          .arrow{
+            display: none;
+          }
+          .arrowhover{
+            display: block;
+          }
+        }
+      }
+    }
+
+  a.load_more {
+    border: 1px solid #998675;
+    border-radius: 5px;
+    background-color: #998675;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: @font_Raleway;
+    color: @color_text;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin: 10px 0 80px;
+    padding: 19px 46px;
+  }
+  a.load_more:hover {
+    background-color: #fff;
+    color: #998675;
+  }
+}
+
+
 .video{
   background-image:  url("../img/bg.jpg");
   display: flex;
@@ -275,6 +443,8 @@ section.screen_content{
     text-align: center;
   }
 }
+
+
 .mobile_info {
   width: 100%;
   display: flex;
@@ -325,7 +495,8 @@ section.screen_content{
     }
   }
 }
-article{
+
+.timer{
   background-image:  url("../img/bg.png");
   display: flex;
   justify-content: space-around;
@@ -362,10 +533,134 @@ article{
   }
 }
 
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2{
+    font-family: @font_Raleway;
+    color:  #555555;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 80px 0 15px;
+  }
+  p{
+    font-family: @font_Montserrat;
+    color:  #8c8c8c;
+    font-size: @font_size;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin: 15px 0 20px;
+  }
+  .blog_group{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    margin: 5px 0 125px;
+    .blog{
+      background-color: #fff;
+      margin: 15px;
+      border: 1px solid #f8f8f8;
+      .picture{
+        position: relative;
+        .date{
+          background-color: #363636;
+          border-radius: 5px;
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          display: flex;
+          flex-direction: column;
+          h5{
+            font-family: @font_Montserrat;
+            color:  #fff;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 20px;
+            margin: 9px 5px;
+            text-align:center;
+          }
+          h6{
+            font-family: @font_Raleway;
+            color:  #fff;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            padding: 7px 12px;
+            text-transform: capitalize;
+            background-color: #252525;
+          }
+        }
+      }
+      .blog_caption{
+        margin: 30px 0 30px 30px;
+        h4{
+          font-family: @font_Raleway;
+          color:  #555555;
+          font-size: 20px;
+          font-weight: 500;
+          text-align: left;
+        }
+        p{
+          font-family: @font_Montserrat;
+          color:  #8c8c8c;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 22px;
+          text-align: left;
+          margin: 20px 0 25px;
+        }
+        a{
+          font-family: @font_Montserrat;
+          color:  #c7b299;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 20px;
+          text-align: left;
+          text-transform: capitalize;
+          text-decoration: none;
+          color: #c7b299;
+          padding: 5px;
+        }
+      }
+    }
+    .blog:hover{
+      background-color: #362f2d;
+      .picture {
+        img{
+          opacity: 0.5;
+        }
+        .date {
+          background-color: #c7b299;
+          h6 {
+            background-color: #a48d72;
+          }
+        }
+      }
+      .blog_caption{
+        h4{
+          color: #c7b299;
+        }
+        p{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
 .logo_partners{
   background-image:  url("../img/bg_logo.png");
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 0;
   img{
     margin: 140px 0;
@@ -373,6 +668,7 @@ article{
     height: 150px;
   }
 }
+
 
 footer{
     background-color: #111111;

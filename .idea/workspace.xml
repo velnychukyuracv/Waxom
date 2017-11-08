@@ -2,10 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5697d06b-49bb-4657-a236-0bdd3f10d817" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/Devrlopment.png" afterPath="$PROJECT_DIR$/dist/img/Devrlopment.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/arrow.png" afterPath="$PROJECT_DIR$/dist/img/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/arrow_button.png" afterPath="$PROJECT_DIR$/dist/img/arrow_button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/bg.jpg" afterPath="$PROJECT_DIR$/dist/img/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/bg_foto.png" afterPath="$PROJECT_DIR$/dist/img/bg_foto.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/bg_logo.png" afterPath="$PROJECT_DIR$/dist/img/bg_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/blog_posts.png" afterPath="$PROJECT_DIR$/dist/img/blog_posts.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/cart.png" afterPath="$PROJECT_DIR$/dist/img/cart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/clients.png" afterPath="$PROJECT_DIR$/dist/img/clients.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/cups.png" afterPath="$PROJECT_DIR$/dist/img/cups.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/customization.png" afterPath="$PROJECT_DIR$/dist/img/customization.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/design.png" afterPath="$PROJECT_DIR$/dist/img/design.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo1.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo2.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo3.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/footer_photo4.png" afterPath="$PROJECT_DIR$/dist/img/footer_photo4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/iphone.png" afterPath="$PROJECT_DIR$/dist/img/iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/launched.png" afterPath="$PROJECT_DIR$/dist/img/launched.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/likes.png" afterPath="$PROJECT_DIR$/dist/img/likes.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/link.png" afterPath="$PROJECT_DIR$/dist/img/link.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo.png" afterPath="$PROJECT_DIR$/dist/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_barber.png" afterPath="$PROJECT_DIR$/dist/img/logo_barber.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_delicious.png" afterPath="$PROJECT_DIR$/dist/img/logo_delicious.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_designers.png" afterPath="$PROJECT_DIR$/dist/img/logo_designers.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_poyal.png" afterPath="$PROJECT_DIR$/dist/img/logo_poyal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/logo_short.png" afterPath="$PROJECT_DIR$/dist/img/logo_short.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/marketing.png" afterPath="$PROJECT_DIR$/dist/img/marketing.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/project1.jpg" afterPath="$PROJECT_DIR$/dist/img/project1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/project2.jpg" afterPath="$PROJECT_DIR$/dist/img/project2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/project3.jpg" afterPath="$PROJECT_DIR$/dist/img/project3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/screen1.jpg" afterPath="$PROJECT_DIR$/dist/img/screen1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/screen2.jpg" afterPath="$PROJECT_DIR$/dist/img/screen2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/screen3.jpg" afterPath="$PROJECT_DIR$/dist/img/screen3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/search_nav.png" afterPath="$PROJECT_DIR$/dist/img/search_nav.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/video_button.png" afterPath="$PROJECT_DIR$/dist/img/video_button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/zoom.png" afterPath="$PROJECT_DIR$/dist/img/zoom.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.min.css" afterPath="$PROJECT_DIR$/app/css/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.css" afterPath="$PROJECT_DIR$/app/less/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.less" afterPath="$PROJECT_DIR$/app/less/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.min.css" afterPath="$PROJECT_DIR$/dist/css/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
@@ -28,31 +69,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3456562">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8708487">
+              <caret line="626" column="22" selection-start-line="626" selection-start-column="22" selection-end-line="626" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.230769">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -75,9 +116,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/css/style.css" />
-        <option value="$PROJECT_DIR$/app/less/style.less" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/less/style.less" />
       </list>
     </option>
   </component>
@@ -96,7 +137,6 @@
             <dependencies>
               <dependency value="clean" />
               <dependency value="img" />
-              <dependency value="less" />
               <dependency value="css-libs" />
             </dependencies>
             <task-name>build</task-name>
@@ -125,7 +165,6 @@
           <GulpTaskState>
             <dependencies>
               <dependency value="browser-sync" />
-              <dependency value="css-libs" />
             </dependencies>
             <task-name>watch</task-name>
           </GulpTaskState>
@@ -192,7 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -208,6 +247,14 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style.less" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -230,8 +277,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,15 +366,15 @@
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962631" sideWeight="0.42857143" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962631" sideWeight="0.5714286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24887893" sideWeight="0.48825502" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24887893" sideWeight="0.511745" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40771812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962631" sideWeight="0.425" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32605043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24887893" sideWeight="0.4614094" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -354,6 +401,142 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="264" column="5" selection-start-line="264" selection-start-column="5" selection-end-line="264" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="266" column="26" selection-start-line="266" selection-start-column="26" selection-end-line="266" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="256" column="9" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="272" column="18" selection-start-line="272" selection-start-column="18" selection-end-line="272" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -449,41 +632,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.322878">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21626617">
+          <caret line="494" column="32" selection-start-line="494" selection-start-column="32" selection-end-line="494" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.042435423">
+          <caret line="542" column="43" selection-start-line="542" selection-start-column="43" selection-end-line="542" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3456562">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8708487">
+          <caret line="626" column="22" selection-start-line="626" selection-start-column="22" selection-end-line="626" selection-end-column="22" />
           <folding />
         </state>
       </provider>
