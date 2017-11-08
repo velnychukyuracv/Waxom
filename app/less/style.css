@@ -11,25 +11,23 @@ header nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-}
-header nav .logo {
-  width: 30%;
+  justify-content: space-between;
 }
 header nav .logo a {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 header nav .logo a img {
   padding: 30px 30px;
 }
-header nav .navigation {
-  width: 70%;
+header nav .logo a.logo_mobile {
+  display: none;
 }
 header nav .navigation ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 40px 40px;
+  padding: 50px 40px;
 }
 header nav .navigation ul li a {
   text-decoration: none;
@@ -48,7 +46,10 @@ header hgroup {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 240px ;
+  margin-top: 220px ;
+}
+header hgroup .logo_header {
+  display: none;
 }
 header hgroup h2 {
   font-family: Raleway, sans-serif;
@@ -116,6 +117,7 @@ aside section h4 {
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 20px;
+  text-align: center;
 }
 aside section p {
   font-family: Montserrat, sans-serif;
@@ -172,7 +174,7 @@ section.screen_content .screen .screen_left,
 section.screen_content .screen .screen_right {
   width: 50%;
   height: 70%;
-  padding-top: 123px;
+  padding: 123px 1% 0;
 }
 section.screen_content .screen .screen_active {
   position: absolute;
@@ -180,6 +182,8 @@ section.screen_content .screen .screen_active {
   margin-bottom: -50px;
   bottom: 50px;
   display: flex;
+  width: 100%;
+  height: 100%;
 }
 .wordpress {
   background-image: url("../img/bg.png");
@@ -187,7 +191,7 @@ section.screen_content .screen .screen_active {
   display: flex;
 }
 .wordpress .left {
-  width: 50%;
+  width: 60%;
   text-align: left;
   padding-top: 50px;
   padding-left: 30px;
@@ -211,7 +215,7 @@ section.screen_content .screen .screen_active {
   font-weight: 300;
 }
 .wordpress .right {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: flex-end;
   padding: 50px 30px;
@@ -446,6 +450,7 @@ section.screen_content .screen .screen_active {
 .mobile_info .mobile_content ul {
   list-style-type: none;
   padding-left: 48px;
+  list-style-position: outside;
 }
 .mobile_info .mobile_content ul .fa-check-circle {
   color: #c7b299;
@@ -462,7 +467,7 @@ section.screen_content .screen .screen_active {
   background-image: url("../img/bg.png");
   display: flex;
   justify-content: space-around;
-  padding: 0 150px;
+  padding: 0 2%;
 }
 .timer section {
   display: flex;
@@ -625,7 +630,6 @@ article .blog_group .blog:hover .blog_caption p {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   background-color: #191919;
   padding: 5% 0;
@@ -762,7 +766,7 @@ article .blog_group .blog:hover .blog_caption p {
   flex-wrap: wrap;
 }
 .info_blog .widget .widget_photo img {
-  padding: 1%;
+  margin: 1% 1%;
 }
 footer {
   background-color: #111111;
@@ -838,4 +842,40 @@ footer .right h5 a {
 }
 footer .right h5:first-child {
   border-right: 1px solid #1e1e1e;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav .logo a {
+    display: none;
+  }
+  nav .navigation ul {
+    padding: 50px 15px !important;
+  }
+  nav .navigation ul li a {
+    padding: 15px !important;
+  }
+  hgroup {
+    margin-top: 200px !important;
+  }
+  hgroup .logo_header {
+    padding-bottom: 20px !important;
+    display: block !important;
+  }
+  aside {
+    flex-wrap: wrap;
+  }
+  aside section {
+    width: 40%;
+    padding: 5%;
+  }
+  .info_blog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .info_blog .about,
+  .info_blog .recent_posts,
+  .info_blog .twitter,
+  .info_blog .widget {
+    width: 50%;
+  }
 }

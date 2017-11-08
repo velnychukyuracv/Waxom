@@ -19,26 +19,28 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     .logo{
-      width: 30%;
-      a{
-        margin-left: 50px;
+      a {
+        margin-left: 30px;
         img {
           padding: 30px 30px;
         }
       }
+      a.logo_mobile{
+        display: none;
+      }
     }
-    .navigation{
-      width: 70%;
 
+    .navigation{
       ul{
         list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding: 40px 40px;
-         li{
+        padding: 50px 40px;
 
+         li{
            a{
              text-decoration: none;
              text-align: left;
@@ -54,6 +56,7 @@ header{
         }
       }
 
+
     }
   }
   hgroup{
@@ -61,7 +64,10 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    margin-top:240px ;
+    margin-top:220px ;
+    .logo_header{
+      display: none;
+    }
     h2{
       font-family: @font_Raleway;
       color:  @color_text;
@@ -130,6 +136,7 @@ aside{
       font-weight: 600;
       margin-top: 30px;
       margin-bottom: 20px;
+      text-align: center;
     }
     p{
       font-family: @font_Montserrat;
@@ -187,7 +194,7 @@ section.screen_content{
     .screen_left,.screen_right{
       width: 50%;
       height: 70%;
-      padding-top: 123px;
+      padding: 123px 1% 0;
     }
     .screen_active {
       position: absolute;
@@ -195,6 +202,8 @@ section.screen_content{
       margin-bottom: -50px;
       bottom: 50px;
       display: flex;
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -205,7 +214,7 @@ section.screen_content{
   padding: 0;
   display: flex;
   .left {
-     width: 50%;
+     width: 60%;
      text-align: left;
      padding-top: 50px;
      padding-left: 30px;
@@ -229,7 +238,7 @@ section.screen_content{
      }
    }
    .right {
-     width: 50%;
+     width: 40%;
      display: flex;
      justify-content: flex-end;
      padding: 50px 30px;
@@ -479,6 +488,8 @@ section.screen_content{
     ul{
       list-style-type: none;
       padding-left: 48px;
+      list-style-position: outside;
+
       .fa-check-circle{
         color: #c7b299;
         padding-right: 10px;
@@ -489,9 +500,7 @@ section.screen_content{
         font-size: @font_size;
         font-weight: 300;
         line-height: 32px;
-
-
-      }
+              }
     }
   }
 }
@@ -500,7 +509,7 @@ section.screen_content{
   background-image:  url("../img/bg.png");
   display: flex;
   justify-content: space-around;
-  padding: 0 150px;
+  padding: 0 2%;
   section{
     display: flex;
     flex-direction: column;
@@ -673,7 +682,6 @@ article {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   background-color:  #191919;
   padding: 5% 0;
@@ -814,7 +822,7 @@ article {
       flex-direction: row;
       flex-wrap: wrap;
       img{
-        padding: 1%;
+        margin: 1% 1%;
       }
     }
   }
@@ -898,3 +906,50 @@ footer{
     }
   }
 }
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+  nav{
+    .logo{
+      a{
+        display: none;
+      }
+    }
+    .navigation{
+      ul{
+        padding: 50px 15px !important;
+        li{
+          a{
+            padding: 15px !important;
+          }
+        }
+      }
+    }
+  }
+  hgroup{
+    margin-top:200px !important;
+    .logo_header{
+      padding-bottom: 20px !important;
+      display: block !important;
+    }
+  }
+  aside {
+    flex-wrap: wrap;
+    section{
+      width: 40%;
+      padding: 5%;
+    }
+  }
+
+  .info_blog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .about, .recent_posts, .twitter, .widget{
+      width: 50%;
+
+    }
+  }
+}
+
+
+
