@@ -14,15 +14,17 @@ body{
   min-width: 320px;
 }
 
-
+/*header start*/
 header{
   background-image: url("../img/bg_foto.png");
   background-repeat: no-repeat;
+
+  /*navigation start*/
   .navigation{
     width: 100%;
     display: flex;
     flex-direction: row;
-
+    /*logo*/
     .logo{
       width: 30%;
       a {
@@ -35,6 +37,7 @@ header{
         display: none;
       }
     }
+    /*navigation*/
     nav{
       width: 60%;
       ul{
@@ -43,7 +46,6 @@ header{
         flex-direction: row;
         justify-content: flex-end;
         padding: 50px 10px;
-
          li{
            a{
              text-decoration: none;
@@ -60,6 +62,8 @@ header{
         }
       }
     }
+
+    /*search and cart*/
     .searchCart{
       width: 10%;
       padding: 45px 0;
@@ -68,6 +72,9 @@ header{
       }
     }
   }
+  /*navigation end*/
+
+  /*header information*/
   hgroup{
     div {
       display: flex;
@@ -128,8 +135,10 @@ header{
     }
   }
 }
+/*header end*/
 
 
+/*section our works start*/
 aside{
   display: flex;
   justify-content: space-around;
@@ -166,6 +175,8 @@ aside{
     }
 
   }
+
+  /*active section*/
   section:hover h4,section:hover p{
     color: #c7b299;
   }
@@ -173,8 +184,10 @@ aside{
     background-color: #c7b299;
   }
 }
+/*section our works end*/
 
 
+/*screen section start*/
 section.screenContent{
   width: 100%;
   background-color:#fbfaf8;
@@ -218,8 +231,10 @@ section.screenContent{
     }
   }
 }
+/*screen section end*/
 
 
+/*wordpress works start*/
 .wordpress {
   background-image:  url("../img/bg.png");
   padding: 0;
@@ -248,6 +263,8 @@ section.screenContent{
        font-weight: 300;
      }
    }
+
+    /*button*/
    .right {
      width: 40%;
      display: flex;
@@ -276,9 +293,9 @@ section.screenContent{
      }
    }
  }
+/*wordpress works end*/
 
-
-
+/*Portfolio start*/
 .portfolio{
   display: flex;
   justify-content: center;
@@ -301,6 +318,7 @@ section.screenContent{
     text-align: center;
     margin: 15px 0;
   }
+  /*button group*/
   .button{
     display: inline-flex;
     margin: 5px 0;
@@ -330,7 +348,7 @@ section.screenContent{
       border: 1px solid #998675;
     }
   }
-
+   /*group projects*/
   .projectGroup{
     display: flex;
     flex-wrap: wrap ;
@@ -437,8 +455,9 @@ section.screenContent{
     color: #998675;
   }
 }
+/*Portfolio end*/
 
-
+/*Video presentaion start*/
 .video{
   background-image:  url("../img/bg.jpg");
   display: flex;
@@ -463,18 +482,21 @@ section.screenContent{
     text-align: center;
   }
 }
+/*Video presentation end*/
 
-
+/*Mobile app plus start*/
 .mobileInfo {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /*section with photo iphone at hand*/
   .handMobile {
     width: 45%;
     display: flex;
     justify-content: flex-end;
     padding-top: 79px;
   }
+  /*content and plus of mobile app*/
   .mobileContent{
     width: 55%;
     display: flex;
@@ -496,6 +518,7 @@ section.screenContent{
       width:85% ;
       padding: 40px 0;
     }
+    /*list of plus*/
     ul{
       list-style-type: none;
       padding-left: 48px;
@@ -515,12 +538,15 @@ section.screenContent{
     }
   }
 }
+/*Mobile app plus end*/
 
+/*section of timer start*/
 .timer{
   background-image:  url("../img/bg.png");
   display: flex;
   justify-content: space-around;
   padding: 0 2%;
+  /*timers*/
   section{
     display: flex;
     flex-direction: column;
@@ -552,7 +578,9 @@ section.screenContent{
     }
   }
 }
+/*section of timer end*/
 
+/*Blog information start*/
 article {
   display: flex;
   justify-content: center;
@@ -575,15 +603,20 @@ article {
     text-align: center;
     margin: 15px 0 20px;
   }
+
+  /*blog groups*/
   .blogGroup{
     display: flex;
     flex-wrap: wrap ;
     justify-content: space-around;
     margin: 5px 0 125px;
+
+    /* blog */
     .blog{
       background-color: #fff;
       margin: 15px;
       border: 1px solid #f8f8f8;
+      /*picture in blog*/
       .picture{
         position: relative;
         .date{
@@ -616,6 +649,8 @@ article {
           }
         }
       }
+
+      /*caption of blog*/
       .blogCaption{
         margin: 30px 0 30px 30px;
         h4{
@@ -648,6 +683,8 @@ article {
         }
       }
     }
+
+    /*active blog*/
     .blog:hover{
       background-color: #362f2d;
       .picture {
@@ -672,9 +709,9 @@ article {
     }
   }
 }
+/*Blog information end*/
 
-
-
+/*our partners start*/
 .logoPartners{
   background-image:  url("../img/bg_logo.png");
   background-repeat: no-repeat;
@@ -688,7 +725,9 @@ article {
     height: 150px;
   }
 }
+/*our partners end*/
 
+/*section of about us, recent posts, twitter, widgets start*/
 .infoBlog{
   display: flex;
   justify-content: space-around;
@@ -696,6 +735,8 @@ article {
   width: 100%;
   background-color:  #191919;
   padding: 5% 0;
+
+  /*section of about us*/
   .about{
     width: 23.5%;
     padding: 1.5%;
@@ -727,6 +768,8 @@ article {
     }
 
   }
+
+  /*section of  recent posts*/
   .recentPosts{
     width: 23.5%;
     padding: 1.5%;
@@ -773,6 +816,8 @@ article {
       }
     }
   }
+
+  /*section of twitter*/
   .twitter{
     width: 23.5%;
     padding: 1.5%;
@@ -817,6 +862,8 @@ article {
       }
     }
   }
+
+  /*section of widgets */
   .widget{
     width: 23.5%;
     padding: 1.5%;
@@ -838,12 +885,14 @@ article {
     }
   }
 }
+/*section of about us, recent posts, twitter, widgets end*/
 
-
-
+/*footer start*/
 footer{
     background-color: #111111;
     display: flex;
+
+  /*Copyright section*/
   .left{
     width: 50%;
     display: flex;
@@ -917,8 +966,12 @@ footer{
     }
   }
 }
+/*footer end*/
 
+/*style for tablet size from 768px to 1023px*/
 @media  (min-width: 768px) and (max-width: 1023px) {
+
+  /*navigation*/
   .navigation{
     .logo{
         display: none !important;
@@ -940,6 +993,8 @@ footer{
       width: 20% !important;
     }
   }
+
+  /*header content*/
   hgroup{
     margin-top:150px !important;
     .logoHeader{
@@ -950,6 +1005,8 @@ footer{
       margin-bottom: 250px !important;
     }
   }
+
+  /*our works*/
   aside {
     flex-wrap: wrap;
     section{
@@ -957,12 +1014,15 @@ footer{
       padding: 5%;
     }
   }
+
+  /*portfolio content*/
   .portfolio{
     p{
       font-size: 15px;
     }
   }
 
+  /*mobile info content*/
   .mobileInfo {
     .handMobile {
       width: 45%;
@@ -992,6 +1052,7 @@ footer{
     }
   }
 
+  /*timers*/
   .timer{
     section{
       h4{
@@ -1003,12 +1064,15 @@ footer{
       }
     }
   }
+
+  /*Blog information*/
   article{
     p{
       font-size: 15px;
     }
   }
 
+/*section of about us, recent posts, twitter, widgets*/
   .infoBlog {
     display: flex;
     justify-content: space-around;
@@ -1019,6 +1083,8 @@ footer{
 
     }
   }
+
+  /*footer*/
   footer{
     flex-wrap: wrap;
     .left{
@@ -1035,9 +1101,378 @@ footer{
     }
   }
 }
+
+/*style for mobile size from 320px to 767px*/
 @media  (min-width: 320px) and (max-width: 767px) {
 
+ /*header*/
+  header{
+
+    /*navigation*/
+    .navigation{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /*logo*/
+      .logo{
+        width: 30%;
+        a {
+          margin-left: 30px;
+          img {
+            padding: 30px 30px;
+          }
+        }
+        a.logoMobile{
+          display: none;
+        }
+      }
+      /*navigation*/
+      nav{
+        display: none;
+      }
+      /*search and cart*/
+      .searchCart{
+        display: none;
+      }
+    }
+    /*header content*/
+    hgroup{
+      div {
+        margin-top: 100px;
+        padding: 5%;
+        h2 {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        h1 {
+          font-size: 40px;
+        }
+        a {
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+
+
+/*section our works*/
+  aside{
+    display: flex;
+    flex-wrap: wrap;
+
+    section{
+      padding: 10% 5%;
+    }
+  }
+
+/*screen section*/
+  section.screenContent{
+    .contant{
+      width: 80%;
+      margin: 5% 10%;
+      h2{
+        font-size: 25px;
+        padding-top: 20%;
+      }
+      p{
+        font-size: 14px;
+        margin: 10% 0 25%;
+      }
+    }
+    .screen{
+      .screenLeft,.screenRight{
+        display: none;
+      }
+      .screenActive {
+        position: relative;
+        padding: 0 10%;
+      }
+    }
+  }
+
+  /*wordpress works*/
+  .wordpress {
+    display: flex;
+    flex-wrap: wrap;
+    .left {
+      width: 100%;
+      text-align: center;
+      padding: 5% 0 2%;
+    }
+    /*button*/
+    .right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding:3% 0 5%;
+
+    }
+  }
+
+  /*portfolio*/
+  .portfolio{
+    padding: 2%;
+    h2{
+      font-size: 25px;
+      margin: 60px 0 10px;
+    }
+    p{
+      margin: 15px 0;
+    }
+    /*button group*/
+    .button{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 3% 0;
+      a{
+        margin: 10px 5px;
+      }
+    }
+    /*group of projects*/
+    .projectGroup {
+      margin: 2%;
+      width: 98%;
+      .project {
+        .picture {
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          a {
+            width: 15%;
+            height: 15%;
+            position: absolute;
+            top: 45%;
+            left: 40%;
+          }
+        }
+      }
+      .project:nth-child(2) {
+        display: none;
+      }
+      .project:last-child {
+        display: none;
+      }
+    }
+    a.loadMore {
+      margin: 10px 0 40px;
+    }
+  }
+
+
+  /*Video presentation*/
+  .video{
+    padding: 30% 0 ;
+  }
+
+  /*Mobile app plus*/
+  .mobileInfo{
+    display: none;
+  }
+
+  /*timers*/
+  .timer{
+    flex-wrap: wrap;
+    padding: 1%;
+    section{
+      padding: 5%;
+      h4{
+        font-size: 35px;
+        padding: 8% 0 8%;
+      }
+      p{
+        padding-bottom: 10%;
+      }
+      hr{
+        background-color: @color_text;
+        width: 30px;
+        height: 2px;
+      }
+    }
+  }
+
+  /*Blog information*/
+  article {
+    padding: 2%;
+    h2{
+      margin: 30px 0 5px;
+    }
+    p{
+      margin: 10px 5px 10px;
+    }
+    /*blog group*/
+    .blogGroup{
+      margin: 5px 0 20px;
+      .blog{
+        width: 80%;
+        height: 80%;
+        .picture {
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .blog:nth-child(2){
+        display: none;
+      }
+      .blog:last-child{
+        display: none;
+      }
+    }
+  }
+
+  /*our logo partners*/
+  .logoPartners{
+    padding: 2%;
+    img{
+      margin: 5%;
+      width: 24%;
+      height: 24%;
+    }
+  }
+
+  /*section of about us, recent posts, twitter, widgets*/
+  .infoBlog {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5% 0;
+    /*about us*/
+    .about {
+      width: 80%;
+      padding: 2.5%;
+      border-bottom: 1px solid #252525;
+      p{
+        padding: 10px 0;
+      }
+    }
+    /*recentPosts*/
+    .recentPosts {
+      width: 80%;
+      padding: 2.5%;
+      border-bottom: 1px solid #252525;
+      h4 {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 40px;
+      }
+      .postsBlog {
+        padding: 5px 0;
+      }
+    }
+    /*twitter*/
+    .twitter {
+        width: 80%;
+        padding: 2.5%;
+        border-bottom: 1px solid #252525;
+        h4 {
+          text-align: center;
+          padding-bottom: 10px;
+          padding-top: 40px;
+        }
+        .twitterBlog {
+          padding: 5px 0;
+        }
+    }
+    /*widget*/
+    .widget {
+        width: 90%;
+        padding: 2%;
+        h4 {
+          text-align: center;
+          padding-bottom: 10px;
+          padding-top: 40px;
+        }
+    }
+  }
+
+  /*footer*/
+  footer {
+      flex-wrap: wrap;
+      .left {
+        width: 100%;
+        padding: 5% 0 2%;
+      }
+      .right {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 4% 0 5%;
+        flex-wrap: wrap;
+        h5 {
+          padding-bottom: 5px;
+          border: none !important;
+        }
+      }
+  }
 }
+
+/*style for some elements at size from 615px to 790px*/
+@media  (min-width: 615px) and (max-width: 790px) {
+
+  /*header*/
+  header{
+    /*navigation*/
+    .navigation{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /*logo*/
+      .logo{
+        width: 30%;
+        a {
+          margin-left: 30px;
+          img {
+            padding: 30px 30px;
+          }
+        }
+        a.logoMobile{
+          display: none;
+        }
+      }
+      /*navigation*/
+      nav{
+        display: none;
+      }
+      /*search and cart*/
+      .searchCart{
+        display: none;
+      }
+    }
+
+    /*header content*/
+    hgroup{
+      div {
+        margin-top: 100px;
+        padding: 5%;
+        h2 {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        h1 {
+          font-size: 40px;
+        }
+        a {
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+
+  /*our works*/
+  aside{
+    display: flex;
+    flex-wrap: wrap;
+    section{
+      width: 40%;
+      height: 40%;
+      padding: 5% 0;
+    }
+  }
+}
+
 
 
 
