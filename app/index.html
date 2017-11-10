@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Waxom</title>
 
+    <!--burger menu link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
     <!--Style-->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <!--<link href="css/style.min.css" rel="stylesheet">-->
 
     <!--Logo at page-->
     <link rel="shortcut icon" href="./img/logo_short.png" type="image/png">
@@ -15,8 +18,9 @@
     <!--Font-Google-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600|Raleway:300,400,500,600" rel="stylesheet">
 
-    <!--Font-Awesome-->
-    <script src="https://use.fontawesome.com/2ce0afabeb.js"></script>
+
+
+
 
 </head>
 <body>
@@ -28,20 +32,28 @@
 
                <!--Logo-->
                 <div class="logo">
-                   <a  href="#"><img class="img-responsive" src="img/logo.png" alt="Logo"></a>
-                   <a  href="#" class="logoMobile"><img class="img-responsive" src="img/logo_white.png" alt="Logo"></a>
-               </div>
+                   <a  href="#" class="logoDesktop"><img class="img-responsive" src="img/logo.png" alt="Logo"></a>
+                   <a  href="#" class="logoMobile"><img class="img-responsive" src="img/logo_white.png" alt="Logo"></a>                             </div>
 
                <!--Navigation-->
                <nav>
-                   <ul>
-                       <li><a href="#">Home</a></li>
-                       <li><a href="#">About Us</a></li>
-                       <li><a href="#">Features</a></li>
-                       <li><a href="#">Blog</a></li>
-                       <li><a href="#">Pricing</a></li>
-                       <li><a href="#">Shortcodes</a></li>
-                       <li><a href="#">Contact</a></li>
+                   <!-- Burger-Icon -->
+                   <div class="b-container">
+                       <div class="b-menu">
+                           <div class="b-bun b-bun--top"></div>
+                           <div class="b-bun b-bun--mid"></div>
+                           <div class="b-bun b-bun--bottom"></div>
+                       </div>
+                   </div>
+                   <!--points of navigation-->
+                   <ul class="b-nav">
+                       <li><a class="b-link" href="#" target="_blank">Home</a></li>
+                       <li><a class="b-link" href="#" target="_blank">About Us</a></li>
+                       <li><a class="b-link" href="#" target="_blank">Features</a></li>
+                       <li><a class="b-link" href="#" target="_blank">Blog</a></li>
+                       <li><a class="b-link" href="#" target="_blank">Pricing</a></li>
+                       <li><a class="b-link" href="#" target="_blank">Shortcodes</a></li>
+                       <li><a class="b-link" href="#" target="_blank">Contact</a></li>
                    </ul>
                </nav>
 
@@ -55,7 +67,6 @@
            <!-- header content section-->
            <hgroup>
               <div>
-               <img class="logoHeader img-responsive" src="img/logo.png" alt="Logo">
                <h2>Unique and Modern Design</h2>
                <h1>Portfolio PSD Template</h1>
                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
@@ -441,6 +452,17 @@
             <h5>Only on<a href="#"> Envato Market</a></h5>
         </div>
     </footer>
+
+<!--scripts sections-->
+
+ <!--Font-Awesome-->
+ <script src="https://use.fontawesome.com/2ce0afabeb.js"></script>
+
+<!--burger menu scripts-->
+ <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+<!--index js-->
+ <script  src="js/index.js"></script>
 
 </body>
 </html>
