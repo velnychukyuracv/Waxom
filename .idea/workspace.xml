@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5697d06b-49bb-4657-a236-0bdd3f10d817" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/logo_short.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.min.css" afterPath="$PROJECT_DIR$/app/css/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/index.js" afterPath="$PROJECT_DIR$/app/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.css" afterPath="$PROJECT_DIR$/app/less/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.less" afterPath="$PROJECT_DIR$/app/less/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.min.css" afterPath="$PROJECT_DIR$/dist/css/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.min.html" afterPath="$PROJECT_DIR$/dist/index.min.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="Waxom 01.11.2017.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4704797">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.71771216">
+              <caret line="463" column="1" selection-start-line="463" selection-start-column="1" selection-end-line="463" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -46,8 +40,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.307693">
-              <caret line="1591" column="10" selection-start-line="1591" selection-start-column="10" selection-end-line="1591" selection-end-column="10" />
+            <state vertical-scroll-proportion="818.6923">
+              <caret line="215" column="27" selection-start-line="215" selection-start-column="27" selection-end-line="215" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -200,28 +194,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Waxom 01.11.2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Waxom 01.11.2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style.less" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -333,7 +305,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44295302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31932774" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31879196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24887893" sideWeight="0.50708216" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -737,16 +709,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.307693">
-          <caret line="1591" column="10" selection-start-line="1591" selection-start-column="10" selection-end-line="1591" selection-end-column="10" />
+        <state vertical-scroll-proportion="818.6923">
+          <caret line="215" column="27" selection-start-line="215" selection-start-column="27" selection-end-line="215" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4704797">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.71771216">
+          <caret line="463" column="1" selection-start-line="463" selection-start-column="1" selection-end-line="463" selection-end-column="41" />
           <folding />
         </state>
       </provider>
