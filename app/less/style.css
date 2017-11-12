@@ -18,6 +18,11 @@ header .navigation {
   width: 100%;
   display: flex;
   flex-direction: row;
+  position: fixed;
+  padding: 0 2%;
+  z-index: 50;
+  background-color: #4B4A45 !important;
+  opacity: 0.7;
   /*logo*/
   /*navigation*/
   /*search and cart*/
@@ -63,17 +68,20 @@ header .navigation .searchCart {
 header .navigation .searchCart a {
   padding: 10px;
 }
+header .navigation:hover {
+  background-color: #4B4A45;
+}
 header hgroup div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 220px;
+  padding-top: 300px;
 }
 header hgroup div h2 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 500;
   text-align: center;
 }
@@ -83,6 +91,7 @@ header hgroup div h1 {
   font-size: 52px;
   font-weight: 700;
   text-align: center;
+  margin: 15px 0;
 }
 header hgroup div p {
   font-family: Montserrat, sans-serif;
@@ -91,7 +100,7 @@ header hgroup div p {
   font-weight: 300;
   line-height: 24px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 header hgroup div a {
   margin-bottom: 370px;
@@ -208,6 +217,7 @@ section.screenContent .screen .screenActive {
   display: flex;
   width: 100%;
   height: 100%;
+  z-index: 5;
 }
 /*screen section end*/
 /*wordpress works start*/
@@ -583,6 +593,7 @@ article .blogGroup .blog {
 }
 article .blogGroup .blog .picture {
   position: relative;
+  z-index: 5;
 }
 article .blogGroup .blog .picture .date {
   background-color: #363636;
@@ -911,6 +922,9 @@ footer .right h5:first-child {
     flex-direction: row;
     justify-content: space-between !important;
     padding: 0 2%;
+    /*logo*/
+    /*navigation*/
+    /*search cart*/
   }
   .navigation .logo {
     order: 2;
@@ -945,12 +959,12 @@ footer .right h5:first-child {
       visibility: visible;
     }
     100% {
-      transform: translate3d(100px, 0, 0);
+      transform: translate3d(80px, 0, 0);
     }
   }
   @keyframes slideOutLeft {
     0% {
-      transform: translate3d(100px, 0, 0);
+      transform: translate3d(80px, 0, 0);
     }
     100% {
       transform: translate3d(0, -300px, 0);
@@ -970,17 +984,12 @@ footer .right h5:first-child {
   .b-nav li {
     color: white;
     list-style-type: none;
-    padding: 10px;
-    text-align: left;
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
+    padding: 60px 5px 20px !important;
+    text-align: center;
   }
   .b-nav li:not(.open) {
-    -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: slideOutLeft;
     animation-name: slideOutLeft;
   }
   .b-nav li {
@@ -990,16 +999,13 @@ footer .right h5:first-child {
     visibility: visible;
   }
   .b-nav.open li {
-    -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
   }
   .b-link:hover,
-  .b-link--active {
-    border-left: #fff solid 2px;
+  .b-link:active {
+    border-bottom: #fff solid 2px;
     padding-left: 30px;
   }
   .b-menu {
@@ -1011,11 +1017,7 @@ footer .right h5:first-child {
     padding-left: 15.5px;
     padding-top: 17.5px;
     position: relative;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     width: 60px;
     z-index: 12;
@@ -1026,7 +1028,6 @@ footer .right h5:first-child {
   .b-bun {
     background: white;
     position: relative;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
   .b-bun--top {
@@ -1064,7 +1065,6 @@ footer .right h5:first-child {
   .b-container.open .b-bun--top {
     background: white;
     top: 9px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   .b-container.open .b-bun--mid {
@@ -1073,14 +1073,10 @@ footer .right h5:first-child {
   .b-container.open .b-bun--bottom {
     background: white;
     top: 5px;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
   /*burger menu end*/
   /*header content*/
-  hgroup {
-    margin-top: 200px !important;
-  }
   hgroup a {
     margin-bottom: 250px !important;
   }
@@ -1166,20 +1162,189 @@ footer .right h5:first-child {
 @media (min-width: 320px) and (max-width: 767px) {
   /*header*/
   header {
+    /*navigation section*/
+    /*burger menu start*/
+    /*burger menu end*/
     /*header content*/
   }
+  header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    /*logo*/
+    /*navigation*/
+    /*search and cart icons*/
+  }
+  header .navigation .logo {
+    order: 2;
+    width: 30% !important;
+    display: flex;
+    justify-content: center;
+  }
+  header .navigation .logo a.logoDesktop {
+    display: none !important;
+  }
+  header .navigation .logo a.logoMobile {
+    display: block !important;
+    margin: 0;
+  }
+  header .navigation nav {
+    order: 1;
+    width: 30% !important;
+  }
+  header .navigation .searchCart {
+    order: 3;
+    width: 30% !important;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 0;
+  }
+  header .navigation .searchCart a {
+    padding: 15px;
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translate3d(-200px, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slideOutLeft {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-200px, 0, 0);
+      visibility: hidden;
+    }
+  }
+  header .b-nav {
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    flex-direction: column !important;
+    background-color: #4B4A45;
+    padding: 50px 10px 10px !important;
+  }
+  header .b-nav:not(.open) {
+    visibility: hidden;
+  }
+  header .b-nav li {
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+    transform: translateX(-200px);
+  }
+  header .b-nav li:not(.open) {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: slideOutLeft;
+  }
+  header .b-nav li:first-child {
+    padding-top: 70px;
+  }
+  header .b-nav.open {
+    visibility: visible;
+  }
+  header .b-nav.open li {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: slideInLeft;
+    color: #fff;
+  }
+  header .b-link {
+    transition: all 0.4s ease;
+    width: auto;
+  }
+  header .b-link:hover,
+  header .b-link--active {
+    border-left: #fff solid 2px;
+    padding-left: 30px;
+    color: #fff;
+  }
+  header .b-menu {
+    border: white solid 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    padding-left: 15.5px;
+    padding-top: 17.5px;
+    position: relative;
+    transition: all 0.4s ease;
+    user-select: none;
+    width: 60px;
+    z-index: 12;
+  }
+  header .b-menu:hover {
+    border: #fff solid 2px;
+  }
+  header .b-bun {
+    background: white;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  header .b-bun--top {
+    height: 2px;
+    top: 0;
+    width: 25px;
+    background: white;
+  }
+  header .b-bun--mid {
+    height: 2px;
+    top: 8px;
+    width: 25px;
+    background: white;
+  }
+  header .b-bun--bottom {
+    height: 2px;
+    top: 16px;
+    width: 25px;
+    background: white;
+  }
+  header .b-container {
+    height: 60px;
+    left: 30px;
+    position: absolute;
+    top: 30px;
+  }
+  header .b-container:hover:not(.open) .bun-top,
+  header .b-container:hover:not(.open) .bun-mid,
+  header .b-container:hover:not(.open) .bun-bottom {
+    background: #c7b299;
+  }
+  header .b-container.open .b-main {
+    border: white solid 2px;
+  }
+  header .b-container.open .b-bun--top {
+    background: white;
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  header .b-container.open .b-bun--mid {
+    opacity: 0;
+  }
+  header .b-container.open .b-bun--bottom {
+    background: white;
+    top: 5px;
+    transform: rotate(-45deg);
+  }
   header hgroup div {
-    margin-top: 100px;
-    padding: 5%;
+    padding: 45% 5% 0;
   }
   header hgroup div h2 {
-    font-size: 16px;
+    font-size: 100%;
     margin-bottom: 10px;
   }
   header hgroup div h1 {
     font-size: 40px;
+    margin: 2% 0;
   }
   header hgroup div a {
+    font-size: 100%;
     margin-bottom: 150px;
   }
   /*section our works*/
@@ -1210,6 +1375,7 @@ footer .right h5:first-child {
   section.screenContent .screen .screenActive {
     position: relative;
     padding: 0 10%;
+    z-index: 5;
   }
   /*wordpress works*/
   .wordpress {
@@ -1261,12 +1427,19 @@ footer .right h5:first-child {
     width: 100%;
     height: 100%;
   }
-  .portfolio .projectGroup .project .picture a {
+  .portfolio .projectGroup .project .picture a.link {
     width: 15%;
     height: 15%;
     position: absolute;
     top: 45%;
-    left: 40%;
+    left: 35% !important;
+  }
+  .portfolio .projectGroup .project .picture a.zoom {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 45%;
+    left: 55% !important;
   }
   .portfolio .projectGroup .project:nth-child(2) {
     display: none;
@@ -1417,24 +1590,6 @@ footer .right h5:first-child {
 }
 /*style for some elements at size from 615px to 790px*/
 @media (min-width: 615px) and (max-width: 790px) {
-  /*header*/
-  header {
-    /*header content*/
-  }
-  header hgroup div {
-    margin-top: 100px;
-    padding: 5%;
-  }
-  header hgroup div h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  header hgroup div h1 {
-    font-size: 40px;
-  }
-  header hgroup div a {
-    margin-bottom: 150px;
-  }
   /*our works*/
   aside {
     display: flex;
@@ -1446,169 +1601,3 @@ footer .right h5:first-child {
     padding: 5% 0;
   }
 }
-/*burger menu for mobile*/
-@media (min-width: 320px) and (max-width: 767px) {
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between !important;
-    padding: 0 2%;
-  }
-  .navigation .logo {
-    order: 2;
-    width: 30% !important;
-    display: flex;
-    justify-content: center;
-  }
-  .navigation .logo a.logoDesktop {
-    display: none !important;
-  }
-  .navigation .logo a.logoMobile {
-    display: block !important;
-    margin: 0;
-  }
-  .navigation nav {
-    order: 1;
-    width: 30% !important;
-  }
-  .navigation .searchCart {
-    order: 3;
-    width: 30% !important;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .navigation .searchCart a {
-    padding: 15px;
-  }
-  /*burger menu start*/
-  @keyframes slideInLeft {
-    0% {
-      transform: translate3d(-200px, 0, 0);
-      visibility: visible;
-    }
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  @keyframes slideOutLeft {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-200px, 0, 0);
-      visibility: hidden;
-    }
-  }
-  .b-nav {
-    position: absolute;
-    z-index: 11;
-    display: flex;
-    flex-direction: column !important;
-  }
-  .b-nav:not(.open) {
-    visibility: hidden;
-  }
-  .b-nav li {
-    color: white;
-    list-style-type: none;
-    padding: 10px;
-    text-align: left;
-    transform: translateX(-200px);
-  }
-  .b-nav li:not(.open) {
-    animation-duration: 0.4s;
-    animation-fill-mode: both;
-    animation-name: slideOutLeft;
-  }
-  .b-nav li:first-child {
-    padding-top: 70px;
-  }
-  .b-nav.open {
-    visibility: visible;
-  }
-  .b-nav.open li {
-    animation-duration: 0.4s;
-    animation-fill-mode: both;
-    animation-name: slideInLeft;
-  }
-  .b-link:hover,
-  .b-link--active {
-    border-left: #fff solid 2px;
-    padding-left: 30px;
-  }
-  .b-menu {
-    border: white solid 2px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: inline-block;
-    height: 60px;
-    padding-left: 15.5px;
-    padding-top: 17.5px;
-    position: relative;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 60px;
-    z-index: 12;
-  }
-  .b-menu:hover {
-    border: #c7b299 solid 2px;
-  }
-  .b-bun {
-    background: white;
-    position: relative;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  .b-bun--top {
-    height: 2px;
-    top: 0;
-    width: 25px;
-    background: white;
-  }
-  .b-bun--mid {
-    height: 2px;
-    top: 8px;
-    width: 25px;
-    background: white;
-  }
-  .b-bun--bottom {
-    height: 2px;
-    top: 16px;
-    width: 25px;
-    background: white;
-  }
-  .b-container {
-    height: 60px;
-    left: 30px;
-    position: absolute;
-    top: 30px;
-  }
-  .b-container:hover:not(.open) .bun-top,
-  .b-container:hover:not(.open) .bun-mid,
-  .b-container:hover:not(.open) .bun-bottom {
-    background: #c7b299;
-  }
-  .b-container.open .b-main {
-    border: white solid 2px;
-  }
-  .b-container.open .b-bun--top {
-    background: white;
-    top: 9px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .b-container.open .b-bun--mid {
-    opacity: 0;
-  }
-  .b-container.open .b-bun--bottom {
-    background: white;
-    top: 5px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-}
-/*burger menu end*/

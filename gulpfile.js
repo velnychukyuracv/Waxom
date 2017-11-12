@@ -7,7 +7,8 @@ var gulp         = require('gulp'), // Подключаем Gulp
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-    htmlmin       = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
+    htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
+    uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
 
 
 //  таск Less+префиксы
@@ -50,9 +51,18 @@ gulp.task('minify', function() {
 // Наблюдение
 gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('app/less/*.less', ['less']); // Наблюдение за sass файлами в папке less
+    gulp.watch('app/js/*.js', browserSync.reload); // Наблюдение за js файлами в папке js
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 });
 
+
+//таск для минификации scripts
+gulp.task('scripts', function() {
+    return gulp.src(['app/js/*.js'])// Берем js
+        .pipe(uglify()) // Сжимаем JS файл
+        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+        .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
+});
 
 // таск сжимаем изображения
 gulp.task('img', function() {
@@ -73,20 +83,16 @@ gulp.task('clean', function() {
 });
 
 // продакшен
-gulp.task('build', ['clean', 'img', 'css-libs', 'minify'], function() {
+gulp.task('build', ['clean', 'img', 'css-libs', 'minify', 'scripts'], function() {
 
-    var buildCss = gulp.src([ // Переносим библиотеки css в продакшен
-            'app/css/*.min.css',
-
-        ])
+    var buildCss = gulp.src(['app/css/*.min.css']) // Переносим библиотеки css в продакшен
         .pipe(gulp.dest('dist/css'))
 
-    var buildHtml = gulp.src([ // Переносим библиотеки html в продакшен
-            'app/index.min.html',
+    var buildJs = gulp.src(['app/js/*.min.js']) // Переносим скрипты в продакшен
+        .pipe(gulp.dest('dist/js'))
 
-        ])
+    var buildHtml = gulp.src(['app/index.min.html'])// Переносим библиотеки html в продакшен
         .pipe(gulp.dest('dist'));
 
 });
-
 gulp.task('default', ['watch']);

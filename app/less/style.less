@@ -24,6 +24,11 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    padding: 0 2%;
+    z-index: 50;
+    background-color: #4B4A45 !important;
+    opacity: 0.7;
     /*logo*/
     .logo{
       width: 30%;
@@ -74,8 +79,9 @@ header{
   }
   /*navigation end*/
 
-
-
+  .navigation:hover{
+    background-color: #4B4A45;
+  }
 
 
   /*header information*/
@@ -85,11 +91,11 @@ header{
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin-top: 220px;
+      padding-top: 300px;
       h2 {
         font-family: @font_Raleway;
         color: @color_text;
-        font-size: 36px;
+        font-size: 34px;
         font-weight: 500;
         text-align: center;
       }
@@ -99,6 +105,7 @@ header{
         font-size: 52px;
         font-weight: 700;
         text-align: center;
+        margin: 15px 0;
       }
       p {
         font-family: @font_Montserrat;
@@ -107,7 +114,7 @@ header{
         font-weight: 300;
         line-height: 24px;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 10px;
       }
       a {
         margin-bottom: 370px;
@@ -206,7 +213,7 @@ section.screenContent{
     p{
       font-family: @font_Montserrat;
       color:  #8c8c8c;
-      font-size: 16px;
+      font-size: @font_size;
       font-weight: 300;
       line-height: 28px;
       margin: 23px 0 40px;
@@ -229,6 +236,7 @@ section.screenContent{
       display: flex;
       width: 100%;
       height: 100%;
+      z-index: 5;
     }
   }
 }
@@ -620,6 +628,7 @@ article {
       /*picture in blog*/
       .picture{
         position: relative;
+        z-index: 5;
         .date{
           background-color: #363636;
           border-radius: 5px;
@@ -978,7 +987,7 @@ footer{
     flex-direction: row;
     justify-content: space-between !important;
     padding: 0 2%;
-
+      /*logo*/
     .logo{
       order: 2;
       width: 30% !important;
@@ -992,10 +1001,12 @@ footer{
         margin: 0;
       }
     }
+    /*navigation*/
     nav{
       order: 1;
       width: 30% !important;
     }
+    /*search cart*/
     .searchCart{
       order: 3;
       width: 30% !important;
@@ -1007,6 +1018,7 @@ footer{
     }
   }
 
+
   /*burger menu start*/
   @keyframes slideInLeft {
     0% {
@@ -1014,12 +1026,12 @@ footer{
       visibility: visible;
     }
     100% {
-      transform: translate3d(100px, 0, 0);
+      transform: translate3d(80px, 0, 0);
     }
   }
   @keyframes slideOutLeft {
     0% {
-      transform: translate3d(100px, 0, 0);
+      transform: translate3d(80px, 0, 0);
     }
     100% {
       transform: translate3d(0, -300px, 0);
@@ -1033,6 +1045,8 @@ footer{
     display: flex;
     flex-direction: row !important;
     flex-wrap: wrap;
+
+
   }
 
   .b-nav:not(.open) {
@@ -1042,18 +1056,15 @@ footer{
   .b-nav li {
     color: white;
     list-style-type: none;
-    padding: 10px;
-    text-align: left;
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
+    padding: 60px 5px 20px !important;
+    text-align: center;
+
+
   }
 
   .b-nav li:not(.open) {
-    -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: slideOutLeft;
     animation-name: slideOutLeft;
   }
 
@@ -1066,16 +1077,13 @@ footer{
   }
 
   .b-nav.open li {
-    -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
   }
 
-  .b-link:hover, .b-link--active {
-    border-left: #fff solid 2px;
+  .b-link:hover, .b-link:active {
+    border-bottom: #fff solid 2px;
     padding-left: 30px;
   }
 
@@ -1088,11 +1096,7 @@ footer{
     padding-left: 15.5px;
     padding-top: 17.5px;
     position: relative;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     width: 60px;
     z-index: 12;
@@ -1105,7 +1109,6 @@ footer{
   .b-bun {
     background: white;
     position: relative;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
 
@@ -1150,7 +1153,6 @@ footer{
   .b-container.open .b-bun--top {
     background: white;
     top: 9px;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
@@ -1161,7 +1163,6 @@ footer{
   .b-container.open .b-bun--bottom {
     background: white;
     top: 5px;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
@@ -1169,7 +1170,6 @@ footer{
 
   /*header content*/
   hgroup{
-    margin-top:200px !important;
     a{
       margin-bottom: 250px !important;
     }
@@ -1276,20 +1276,213 @@ footer{
 
  /*header*/
   header{
+     /*navigation section*/
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between !important;
+
+       /*logo*/
+      .logo {
+        order: 2;
+        width: 30% !important;
+        display: flex;
+        justify-content: center;
+        a.logoDesktop {
+          display: none !important;
+        }
+        a.logoMobile {
+          display: block !important;
+          margin: 0;
+        }
+      }
+      /*navigation*/
+      nav {
+        order: 1;
+        width: 30% !important;
+      }
+      /*search and cart icons*/
+      .searchCart {
+        order: 3;
+        width: 30% !important;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5% 0;
+        a {
+          padding: 15px;
+        }
+      }
+    }
+
+
+    /*burger menu start*/
+    @keyframes slideInLeft {
+      0% {
+        transform: translate3d(-200px, 0, 0);
+        visibility: visible;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    @keyframes slideOutLeft {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-200px, 0, 0);
+        visibility: hidden;
+      }
+    }
+    .b-nav {
+      position: absolute;
+      z-index: 11;
+      display: flex;
+      flex-direction: column !important;
+      background-color: #4B4A45;
+      padding: 50px 10px 10px !important;
+    }
+
+    .b-nav:not(.open) {
+      visibility: hidden;
+    }
+
+    .b-nav li {
+      color: white;
+      list-style-type: none;
+      padding: 10px;
+      text-align: left;
+      transform: translateX(-200px);
+    }
+
+    .b-nav li:not(.open) {
+      animation-duration: 0.4s;
+      animation-fill-mode: both;
+      animation-name: slideOutLeft;
+
+    }
+
+    .b-nav li:first-child {
+      padding-top: 70px;
+    }
+
+
+    .b-nav.open {
+      visibility: visible;
+    }
+
+    .b-nav.open li {
+      animation-duration: 0.4s;
+      animation-fill-mode: both;
+      animation-name: slideInLeft;
+      color: #fff;
+
+    }
+    .b-link {
+      transition: all 0.4s ease;
+      width: auto;
+    }
+    .b-link:hover, .b-link--active {
+      border-left: #fff solid 2px;
+      padding-left: 30px;
+      color: #fff;
+    }
+
+    .b-menu {
+      border: white solid 2px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      height: 60px;
+      padding-left: 15.5px;
+      padding-top: 17.5px;
+      position: relative;
+      transition: all 0.4s ease;
+      user-select: none;
+      width: 60px;
+      z-index: 12;
+
+    }
+
+    .b-menu:hover {
+      border: #fff solid 2px;
+    }
+
+    .b-bun {
+      background: white;
+      position: relative;
+      transition: all 0.4s ease;
+    }
+
+    .b-bun--top {
+      height: 2px;
+      top: 0;
+      width: 25px;
+      background: white;
+    }
+
+    .b-bun--mid {
+      height: 2px;
+      top: 8px;
+      width: 25px;
+      background: white;
+    }
+
+    .b-bun--bottom {
+      height: 2px;
+      top: 16px;
+      width: 25px;
+      background: white;
+    }
+
+    .b-container {
+      height: 60px;
+      left: 30px;
+      position: absolute;
+      top: 30px;
+    }
+
+    .b-container:hover:not(.open) .bun-top,
+    .b-container:hover:not(.open) .bun-mid,
+    .b-container:hover:not(.open) .bun-bottom {
+      background: #c7b299;
+    }
+
+    .b-container.open .b-main {
+      border: white solid 2px;
+    }
+
+    .b-container.open .b-bun--top {
+      background: white;
+      top: 9px;
+      transform: rotate(45deg);
+    }
+
+    .b-container.open .b-bun--mid {
+      opacity: 0;
+    }
+
+    .b-container.open .b-bun--bottom {
+      background: white;
+      top: 5px;
+      transform: rotate(-45deg);
+    }
+    /*burger menu end*/
 
     /*header content*/
     hgroup{
       div {
-        margin-top: 100px;
-        padding: 5%;
+        padding: 45% 5% 0;
         h2 {
-          font-size: 16px;
+          font-size: 100%;
           margin-bottom: 10px;
         }
         h1 {
           font-size: 40px;
+          margin: 2% 0;
         }
         a {
+          font-size: 100%;
           margin-bottom: 150px;
         }
       }
@@ -1328,6 +1521,7 @@ footer{
       .screenActive {
         position: relative;
         padding: 0 10%;
+        z-index: 5;
       }
     }
   }
@@ -1382,12 +1576,19 @@ footer{
             width: 100%;
             height: 100%;
           }
-          a {
+          a.link {
             width: 15%;
             height: 15%;
             position: absolute;
             top: 45%;
-            left: 40%;
+            left: 35% !important;
+          }
+          a.zoom{
+            width: 15%;
+            height: 15%;
+            position: absolute;
+            top: 45%;
+            left: 55% !important;
           }
         }
       }
@@ -1553,26 +1754,6 @@ footer{
 
 /*style for some elements at size from 615px to 790px*/
 @media  (min-width: 615px) and (max-width: 790px) {
-  /*header*/
-  header{
-    /*header content*/
-    hgroup{
-      div {
-        margin-top: 100px;
-        padding: 5%;
-        h2 {
-          font-size: 16px;
-          margin-bottom: 10px;
-        }
-        h1 {
-          font-size: 40px;
-        }
-        a {
-          margin-bottom: 150px;
-        }
-      }
-    }
-  }
 
   /*our works*/
   aside{
@@ -1586,213 +1767,6 @@ footer{
   }
 }
 
-
-
-/*burger menu for mobile*/
-@media  (min-width: 320px) and (max-width: 767px) {
-
-  .navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between !important;
-    padding: 0 2%;
-
-    .logo{
-      order: 2;
-      width: 30% !important;
-      display: flex;
-      justify-content: center;
-      a.logoDesktop {
-        display: none !important;
-      }
-      a.logoMobile{
-        display: block !important;
-        margin: 0;
-      }
-    }
-    nav{
-      order: 1;
-      width: 30% !important;
-    }
-    .searchCart{
-      order: 3;
-      width: 30% !important;
-      display: flex;
-      justify-content: flex-end;
-      a{
-        padding: 15px;
-      }
-    }
-  }
-
-  /*burger menu start*/
-  @keyframes slideInLeft {
-    0% {
-      transform: translate3d(-200px,0, 0);
-      visibility: visible;
-    }
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  @keyframes slideOutLeft {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-200px,0, 0);
-      visibility: hidden;
-    }
-  }
-  body:after {
-    background: white;
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    overflow: auto;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 100%;
-  }
-  body.open {
-    overflow: hidden;
-  }
-  body.open:after {
-    opacity: 0;
-    visibility: visible;
-  }
-
-  .b-nav {
-    position: absolute;
-    z-index: 11;
-    display: flex;
-    flex-direction: column !important;
-  }
-
-  .b-nav:not(.open) {
-    visibility: hidden;
-  }
-
-  .b-nav li {
-    color: white;
-    list-style-type: none;
-    padding: 10px;
-    text-align: left;
-    transform: translateX(-200px);
-  }
-
-  .b-nav li:not(.open) {
-    animation-duration: 0.4s;
-    animation-fill-mode: both;
-    animation-name: slideOutLeft;
-  }
-
-  .b-nav li:first-child {
-    padding-top: 70px;
-  }
-
-  .b-nav.open {
-    visibility: visible;
-  }
-
-  .b-nav.open li {
-    animation-duration: 0.4s;
-    animation-fill-mode: both;
-    animation-name: slideInLeft;
-  }
-  .b-link {
-    transition: all 0.4s ease;
-    width: auto;
-  }
-  .b-link:hover, .b-link--active {
-    border-left: #fff solid 2px;
-    padding-left: 30px;
-  }
-
-  .b-menu {
-    border: white solid 2px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: inline-block;
-    height: 60px;
-    padding-left: 15.5px;
-    padding-top: 17.5px;
-    position: relative;
-    transition: all 0.4s ease;
-    user-select: none;
-    width: 60px;
-    z-index: 12;
-  }
-
-  .b-menu:hover {
-    border: #c7b299 solid 2px;
-  }
-
-  .b-bun {
-    background: white;
-    position: relative;
-    transition: all 0.4s ease;
-  }
-
-  .b-bun--top {
-    height: 2px;
-    top: 0;
-    width: 25px;
-    background: white;
-  }
-
-  .b-bun--mid {
-    height: 2px;
-    top: 8px;
-    width: 25px;
-    background: white;
-  }
-
-  .b-bun--bottom {
-    height: 2px;
-    top: 16px;
-    width: 25px;
-    background: white;
-  }
-
-  .b-container {
-    height: 60px;
-    left: 30px;
-    position: absolute;
-    top: 30px;
-  }
-
-  .b-container:hover:not(.open) .bun-top,
-  .b-container:hover:not(.open) .bun-mid,
-  .b-container:hover:not(.open) .bun-bottom {
-    background: #c7b299;
-  }
-
-  .b-container.open .b-main {
-    border: white solid 2px;
-  }
-
-  .b-container.open .b-bun--top {
-    background: white;
-    top: 9px;
-    transform: rotate(45deg);
-  }
-
-  .b-container.open .b-bun--mid {
-    opacity: 0;
-  }
-
-  .b-container.open .b-bun--bottom {
-    background: white;
-    top: 5px;
-    transform: rotate(-45deg);
-  }
-}
-/*burger menu end*/
 
 
 
