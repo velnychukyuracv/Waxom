@@ -21,8 +21,6 @@ header .navigation {
   position: fixed;
   padding: 0 2%;
   z-index: 50;
-  background-color: #4B4A45 !important;
-  opacity: 0.7;
   /*logo*/
   /*navigation*/
   /*search and cart*/
@@ -68,24 +66,65 @@ header .navigation .searchCart {
 header .navigation .searchCart a {
   padding: 10px;
 }
-header .navigation:hover {
-  background-color: #4B4A45;
+header hgroup {
+  padding-top: 300px;
 }
-header hgroup div {
+header hgroup .sl {
+  max-width: 100%;
+  margin: 0 auto;
+}
+header hgroup .sl .slick-prev {
+  top: 100px;
+  left: 20px;
+  z-index: 100;
+  height: 200px;
+  width: 100px;
+}
+header hgroup .sl .slick-prev:before {
+  content: url("../img/arrow_pr.png");
+}
+header hgroup .sl .slick-next {
+  top: 100px;
+  right: 50px;
+  z-index: 100;
+  height: 200px;
+  width: 100px;
+}
+header hgroup .sl .slick-next:before {
+  content: url("../img/arrow_next.png");
+}
+header hgroup .sl .slick-dots li {
+  margin: 50px 5px;
+}
+header hgroup .sl .slick-dots li button {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(172, 155, 135, 0.4);
+}
+header hgroup .sl .slick-dots li button:before {
+  content: '';
+}
+header hgroup .sl .slick-dots li.slick-active button {
+  background-color: rgba(172, 155, 135, 0.02);
+  border: 1px solid #ac9b87 ;
+}
+header hgroup .sl .sl_slide {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 300px;
+  text-align: center;
 }
-header hgroup div h2 {
+header hgroup .sl .sl_slide h2 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 34px;
   font-weight: 500;
   text-align: center;
 }
-header hgroup div h1 {
+header hgroup .sl .sl_slide h1 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 52px;
@@ -93,7 +132,7 @@ header hgroup div h1 {
   text-align: center;
   margin: 15px 0;
 }
-header hgroup div p {
+header hgroup .sl .sl_slide p {
   font-family: Montserrat, sans-serif;
   color: #ffffff;
   font-size: 16px;
@@ -102,7 +141,7 @@ header hgroup div p {
   text-align: center;
   margin-top: 10px;
 }
-header hgroup div a {
+header hgroup .sl .sl_slide a {
   margin-bottom: 370px;
   border-radius: 5px;
   background-color: #998675;
@@ -121,7 +160,7 @@ header hgroup div a {
   text-transform: uppercase;
   margin-top: 50px;
 }
-header hgroup div a:hover {
+header hgroup .sl .sl_slide a:hover {
   background-color: #fff;
   color: #998675;
   border: 1px solid #998675;
@@ -433,7 +472,7 @@ section.screenContent .screen .screenActive {
 }
 /*Portfolio end*/
 /*Video presentaion start*/
-.video {
+.videoPopup {
   background-image: url("../img/bg.jpg");
   display: flex;
   flex-direction: column;
@@ -441,7 +480,7 @@ section.screenContent .screen .screenActive {
   align-items: center;
   padding: 200px 0 ;
 }
-.video h3 {
+.videoPopup h3 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-size: 30px;
@@ -449,7 +488,7 @@ section.screenContent .screen .screenActive {
   text-align: center;
   padding: 45px 0 28px;
 }
-.video p {
+.videoPopup p {
   font-family: Montserrat, sans-serif;
   color: #ffffff;
   font-size: 16px;
@@ -1332,20 +1371,14 @@ footer .right h5:first-child {
     top: 5px;
     transform: rotate(-45deg);
   }
-  header hgroup div {
-    padding: 45% 5% 0;
-  }
   header hgroup div h2 {
     font-size: 100%;
-    margin-bottom: 10px;
   }
   header hgroup div h1 {
     font-size: 40px;
-    margin: 2% 0;
   }
   header hgroup div a {
     font-size: 100%;
-    margin-bottom: 150px;
   }
   /*section our works*/
   aside {
@@ -1451,7 +1484,7 @@ footer .right h5:first-child {
     margin: 10px 0 40px;
   }
   /*Video presentation*/
-  .video {
+  .videoPopup {
     padding: 30% 0 ;
   }
   /*Mobile app plus*/

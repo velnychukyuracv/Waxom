@@ -8,17 +8,22 @@
     <!--burger menu link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <!--Style-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <!-- slick слайдер -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
-    <!--Logo at page-->
+    <!-- Magnific Popup core CSS file -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+     <!--Favicon logo-->
     <link rel="shortcut icon" href="./img/favicon_icon.png" type="image/png">
 
     <!--Font-Google-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600|Raleway:300,400,500,600" rel="stylesheet">
 
-
+    <!--Style-->
+    <link href="css/style.css" rel="stylesheet">
+   <!-- <link href="css/style.min.css" rel="stylesheet">-->
 
 </head>
 <body>
@@ -26,7 +31,7 @@
  <!--header section -->
     <header>
         <!--navigation section-->
-        <div class="navigation">
+        <div class="navigation" id="navigation">
 
                <!--Logo-->
                 <div class="logo">
@@ -58,17 +63,44 @@
                <!--search cart icons-->
                <div class="searchCart">
                         <a href="#"> <img src="img/cart.png" alt="cart"></a>
+
                         <a href="#"><img src="img/search_nav.png" alt="search"></a>
                </div>
         </div>
 
            <!-- header content section-->
            <hgroup>
-              <div>
-               <h2>Unique and Modern Design</h2>
-               <h1>Portfolio PSD Template</h1>
-               <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
-               <a href="#" type="button">Get Started</a>
+              <div class="sl">
+                  <div class="sl_slide">
+                     <h2>Unique and Modern Design</h2>
+                    <h1>Portfolio PSD Template</h1>
+                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
+                    <a href="#" type="button">Get Started</a>
+                  </div>
+                  <div class="sl_slide">
+                      <h2>Unique and Modern Design</h2>
+                      <h1>Portfolio PSD Template</h1>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
+                      <a href="#" type="button">Get Started</a>
+                  </div>
+                  <div class="sl_slide">
+                      <h2>Unique and Modern Design</h2>
+                      <h1>Portfolio PSD Template</h1>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
+                      <a href="#" type="button">Get Started</a>
+                  </div>
+                  <div class="sl_slide">
+                      <h2>Unique and Modern Design</h2>
+                      <h1>Portfolio PSD Template</h1>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
+                      <a href="#" type="button">Get Started</a>
+                  </div>
+                  <div class="sl_slide">
+                      <h2>Unique and Modern Design</h2>
+                      <h1>Portfolio PSD Template</h1>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</p>
+                      <a href="#" type="button">Get Started</a>
+                  </div>
              </div>
            </hgroup>
 
@@ -246,8 +278,10 @@
     </aside>
 
 <!--Video presentation-->
-   <aside class="video">
-       <img src="img/video_button.png" alt="video button">
+   <aside class="videoPopup">
+       <a class="video"  href="https://vimeo.com/205379223">
+           <img src="img/video_button.png" alt="video button">
+       </a>
        <h3>Waxom Video Presentation</h3>
        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt <br>  saepius, qui sequitur mutationem consuetudium.</p>
    </aside>
@@ -323,7 +357,9 @@
             <!--Blog 1-->
             <div class="blog">
                 <div class="picture">
-                    <img src="img/photo1.jpg" alt="lorem">
+                    <div class="sl2">
+                        <img src="img/photo1.jpg" alt="lorem">
+                    </div>
                     <div class="date">
                         <h5>30</h5>
                         <h6>sep.</h6>
@@ -337,7 +373,7 @@
             </div>
 
             <!--Blog 2-->
-            <div class="blog">
+            <div class="blog ">
                 <div class="picture">
                     <img src="img/photo2.jpg" alt="lorem">
                     <div class="date">
@@ -367,6 +403,7 @@
                     <a href="#">read more <img src="img/arrow_button.png" alt="arrow"> </a>
                 </div>
             </div>
+
         </div>
     </article>
 
@@ -451,7 +488,7 @@
         </div>
     </footer>
 
-<!--scripts sections-->
+<!--scripts-->
 
  <!--Font-Awesome-->
  <script src="https://use.fontawesome.com/2ce0afabeb.js"></script>
@@ -459,9 +496,19 @@
 <!--burger menu scripts-->
  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
-<!--index js-->
+ <!--jquery-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+ <!-- slick слайдер -->
+ <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+ <!-- Magnific Popup core JS file -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+ <!--index js-->
  <script  src="js/index.js"></script>
- <script  src="js/index.min.js"></script>
+ <!--<script  src="js/index.min.js"></script>-->
+
 
 </body>
 </html>

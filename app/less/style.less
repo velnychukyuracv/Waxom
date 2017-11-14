@@ -27,8 +27,8 @@ header{
     position: fixed;
     padding: 0 2%;
     z-index: 50;
-    background-color: #4B4A45 !important;
-    opacity: 0.7;
+
+
     /*logo*/
     .logo{
       width: 30%;
@@ -75,70 +75,115 @@ header{
       a{
         padding: 10px;
       }
+
     }
   }
   /*navigation end*/
 
-  .navigation:hover{
-    background-color: #4B4A45;
-  }
+
 
 
   /*header information*/
   hgroup{
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 300px;
-      h2 {
-        font-family: @font_Raleway;
-        color: @color_text;
-        font-size: 34px;
-        font-weight: 500;
-        text-align: center;
+    padding-top: 300px;
+    .sl {
+      max-width: 100%;
+      margin: 0 auto;
+      .slick-prev {
+        top: 100px;
+        left: 20px;
+        z-index: 100;
+        height: 200px;
+        width: 100px;
       }
-      h1 {
-        font-family: @font_Raleway;
-        color: @color_text;
-        font-size: 52px;
-        font-weight: 700;
-        text-align: center;
-        margin: 15px 0;
+      .slick-prev:before{
+        content: url("../img/arrow_pr.png");
       }
-      p {
-        font-family: @font_Montserrat;
-        color: @color_text;
-        font-size: @font_size;
-        font-weight: 300;
-        line-height: 24px;
-        text-align: center;
-        margin-top: 10px;
+      .slick-next {
+        top: 100px;
+        right: 50px;
+        z-index: 100;
+        height: 200px;
+        width: 100px;
       }
-      a {
-        margin-bottom: 370px;
-        border-radius: 5px;
-        background-color: #998675;
-        width: 170px;
-        height: 53px;
+      .slick-next:before{
+        content: url("../img/arrow_next.png");
+      }
+      .slick-dots li{
+        margin: 50px 5px;
+        button{
+
+          border-radius: 50%;
+          width:5px;
+          height: 5px;
+          background-color: rgba(172, 155, 135, 0.4);
+        }
+      }
+      .slick-dots li button:before{
+        content: '';
+      }
+      .slick-dots li.slick-active button {
+        background-color: rgba(172, 155, 135, 0.02);
+        border: 1px solid #ac9b87 ;
+      }
+
+
+      .sl_slide {
+        border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
-        font-family: @font_Raleway;
-        color: @color_text;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 23px;
+        flex-direction: column;
         text-align: center;
-        text-transform: uppercase;
-        margin-top: 50px;
-      }
-      a:hover {
-        background-color: #fff;
-        color: #998675;
-        border: 1px solid #998675;
+
+        h2 {
+          font-family: @font_Raleway;
+          color: @color_text;
+          font-size: 34px;
+          font-weight: 500;
+          text-align: center;
+        }
+        h1 {
+          font-family: @font_Raleway;
+          color: @color_text;
+          font-size: 52px;
+          font-weight: 700;
+          text-align: center;
+          margin: 15px 0;
+        }
+        p {
+          font-family: @font_Montserrat;
+          color: @color_text;
+          font-size: @font_size;
+          font-weight: 300;
+          line-height: 24px;
+          text-align: center;
+          margin-top: 10px;
+        }
+        a {
+          margin-bottom: 370px;
+          border-radius: 5px;
+          background-color: #998675;
+          width: 170px;
+          height: 53px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          font-family: @font_Raleway;
+          color: @color_text;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 23px;
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 50px;
+        }
+        a:hover {
+          background-color: #fff;
+          color: #998675;
+          border: 1px solid #998675;
+        }
       }
     }
   }
@@ -156,7 +201,7 @@ aside{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 80px 30px;
+    padding:  80px 30px;
     h4{
       font-family: @font_Raleway;
       color:  #555555;
@@ -467,13 +512,14 @@ section.screenContent{
 /*Portfolio end*/
 
 /*Video presentaion start*/
-.video{
+.videoPopup{
   background-image:  url("../img/bg.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 200px 0 ;
+
   h3{
     font-family: @font_Raleway;
     color:  @color_text;
@@ -491,6 +537,7 @@ section.screenContent{
     text-align: center;
   }
 }
+
 /*Video presentation end*/
 
 /*Mobile app plus start*/
@@ -1472,18 +1519,17 @@ footer{
     /*header content*/
     hgroup{
       div {
-        padding: 45% 5% 0;
         h2 {
           font-size: 100%;
-          margin-bottom: 10px;
+
         }
         h1 {
           font-size: 40px;
-          margin: 2% 0;
+
         }
         a {
           font-size: 100%;
-          margin-bottom: 150px;
+
         }
       }
     }
@@ -1606,7 +1652,7 @@ footer{
 
 
   /*Video presentation*/
-  .video{
+  .videoPopup{
     padding: 30% 0 ;
   }
 

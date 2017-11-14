@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 
-//  таск для минификации
+//  таск для минификации CSS
 gulp.task('css-libs', ['less'], function() {
     return gulp.src('app/css/style.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
@@ -92,6 +92,7 @@ gulp.task('build', ['clean', 'img', 'css-libs', 'minify', 'scripts'], function()
         .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src(['app/index.min.html'])// Переносим библиотеки html в продакшен
+        .pipe(rename('index.html'))
         .pipe(gulp.dest('dist'));
 
 });
