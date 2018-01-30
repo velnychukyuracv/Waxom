@@ -28,7 +28,7 @@ header .navigation {
           flex-direction: row;
   position: fixed;
   padding: 0 2%;
-  z-index: 50;
+  z-index: 100;
   /*logo*/
   /*navigation*/
   /*search and cart*/
@@ -94,7 +94,7 @@ header hgroup .sl {
 header hgroup .sl .slick-prev {
   top: 100px;
   left: 20px;
-  z-index: 100;
+  z-index: 40;
   height: 200px;
   width: 100px;
 }
@@ -104,7 +104,7 @@ header hgroup .sl .slick-prev:before {
 header hgroup .sl .slick-next {
   top: 100px;
   right: 50px;
-  z-index: 100;
+  z-index: 40;
   height: 200px;
   width: 100px;
 }
@@ -148,6 +148,7 @@ header hgroup .sl .sl_slide {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  outline: none;
 }
 header hgroup .sl .sl_slide h2 {
   font-family: Raleway, sans-serif;
@@ -201,6 +202,8 @@ header hgroup .sl .sl_slide a {
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
+  border: none;
+  outline: none;
 }
 header hgroup .sl .sl_slide a:hover {
   background-color: #fff;
@@ -508,18 +511,6 @@ section.screenContent .screen .screenActive {
 .portfolio .projectGroup .project .picture {
   position: relative;
 }
-.portfolio .projectGroup .project .picture .link {
-  position: absolute;
-  top: 45%;
-  left: 40%;
-  display: none;
-}
-.portfolio .projectGroup .project .picture .zoom {
-  position: absolute;
-  top: 45%;
-  left: 55%;
-  display: none;
-}
 .portfolio .projectGroup .project .caption {
   margin: 30px 0 0 30px;
   position: relative;
@@ -626,6 +617,9 @@ section.screenContent .screen .screenActive {
           align-items: center;
   padding: 200px 0 ;
 }
+.videoPopup a {
+  outline: none;
+}
 .videoPopup h3 {
   font-family: Raleway, sans-serif;
   color: #ffffff;
@@ -641,6 +635,30 @@ section.screenContent .screen .screenActive {
   font-weight: 300;
   line-height: 28px;
   text-align: center;
+}
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
 }
 /*Video presentation end*/
 /*Mobile app plus start*/
@@ -753,16 +771,20 @@ section.screenContent .screen .screenActive {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 45px 0 40px;
+  width: 200px;
+  margin: 25px 0;
 }
-.timer section h4 {
+.timer section .counter {
   font-family: Montserrat, sans-serif;
   color: #ffffff;
   font-size: 48px;
   font-weight: 200;
   line-height: 36px;
   text-align: center;
-  padding: 30px 0 18px;
+  margin: 15px 0;
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
 }
 .timer section p {
   font-family: Montserrat, sans-serif;
@@ -1210,6 +1232,25 @@ footer .right h5:first-child {
   border-right: 1px solid #1e1e1e;
 }
 /*footer end*/
+/* Back To Top Button*/
+#back-top {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 9999;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#back-top img {
+  width: 100%;
+}
+#back-top:hover {
+  opacity: 1;
+}
 /*style for tablet size from 768px to 1023px*/
 @media (min-width: 768px) and (max-width: 1023px) {
   /*navigation*/
@@ -1505,9 +1546,12 @@ footer .right h5:first-child {
     font-size: 14px;
   }
   /*timers*/
-  .timer section h4 {
+  .timer section {
+    width: 100px;
+  }
+  .timer section .counter {
     font-size: 40px;
-    padding: 20px 0 18px;
+    width: 100px;
   }
   .timer section p {
     padding-bottom: 20px;
@@ -1969,12 +2013,8 @@ footer .right h5:first-child {
             flex-wrap: wrap;
     padding: 1%;
   }
-  .timer section {
-    padding: 5%;
-  }
-  .timer section h4 {
+  .timer section .counter {
     font-size: 35px;
-    padding: 8% 0 8%;
   }
   .timer section p {
     padding-bottom: 10%;

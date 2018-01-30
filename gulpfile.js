@@ -83,15 +83,17 @@ gulp.task('clean', function() {
 });
 
 // продакшен
-gulp.task('build', ['clean', 'img', 'css-libs', 'minify', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'css-libs','scripts','minify'], function() {
 
     var buildCss = gulp.src(['app/css/*.min.css']) // Переносим библиотеки css в продакшен
+        .pipe(rename('style.css'))
         .pipe(gulp.dest('dist/css'))
 
     var buildJs = gulp.src(['app/js/*.min.js']) // Переносим скрипты в продакшен
+        .pipe(rename('index.js'))
         .pipe(gulp.dest('dist/js'))
 
-    var buildHtml = gulp.src(['app/index.min.html'])// Переносим библиотеки html в продакшен
+    var buildHtml = gulp.src(['app/*.min.html'])// Переносим библиотеки html в продакшен
         .pipe(rename('index.html'))
         .pipe(gulp.dest('dist'));
 

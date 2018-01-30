@@ -5,7 +5,6 @@
     var burgerMenu = document.getElementsByClassName('b-menu')[0];
     var burgerContain = document.getElementsByClassName('b-container')[0];
     var burgerNav = document.getElementsByClassName('b-nav')[0];
-
     burgerMenu.addEventListener('click', function toggleClasses() {
         [body, burgerContain, burgerNav].forEach(function (el) {
             el.classList.toggle('open');
@@ -17,23 +16,12 @@
 
 
 // Scroll Events
-$(document).ready(function(){
-    var HeaderTop = $('#navigation').offset().top;
-    var hh =HeaderTop;
-// Activate menu
-    $(window).scroll(function(){
-        if( $(window).scrollTop() > HeaderTop ) {
-            if($(window).scrollTop() > hh) {
-                $('#navigation').css({ background:'#4B4A45'});
-            } else{
-                $('#navigation').css();
-            }
-
-
-        } else {
-            $('#navigation').css({background:'none'});
-        }
-    });
+$(window).scroll(function(){
+    if($(window).scrollTop() > 100) {
+        $('#navigation').css({ background:'#4B4A45'});
+    } else{
+        $('#navigation').css('background','transparent');
+    }
 });
 
 
@@ -53,18 +41,48 @@ $('.sl').slick({
 });
 
 
-//Popup
-$('.video').magnificPopup({
-    type: 'iframe',
-    iframe: {
-        markup: '<div class="mfp-iframe-scaler">'+
-        '<div class="mfp-close"></div>'+
-        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-        '</div>'
-    },
-    callbacks: {
-        markupParse: function(template, values, item) {
-            values.title = item.el.attr('title');
-        }
+//counter
+var div_top = $('article').offset().top;
+$(window).scroll(function(){
+    if($(window).scrollTop() > div_top){
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text()}).animate({
+                    countNum: countTo
+                },
+
+                {
+
+                    duration: 8000,
+                    easing:'linear',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+
+                });
+
+
+
+        });
     }
 });
+
+
+//Back To Top Button
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('#back-top').fadeIn();
+    } else {
+        $('#back-top').fadeOut();
+    }
+});
+$('#back-top').click(function(){
+    $('html, body').animate({scrollTop:$('header').position().top}, 1500);
+});
+
