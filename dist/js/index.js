@@ -1,31 +1,96 @@
-"use strict";!function(){var e=document.body,a=document.getElementsByClassName("b-menu")[0],s=document.getElementsByClassName("b-container")[0],t=document.getElementsByClassName("b-nav")[0];a.addEventListener("click",function(){[e,s,t].forEach(function(e){e.classList.toggle("open")})},!1)}(),$(window).scroll(function(){$(window).scrollTop()>100?$("#navigation").css({background:"#4B4A45"}):$("#navigation").css("background","transparent")}),$(".sl").slick({autoplay:!0,autoplaySpeed:3e3,dots:!0,responsive:[{breakpoint:768,settings:{arrows:!1}}]}),$(".video").magnificPopup({type:"iframe",iframe:{markup:'<div class="mfp-iframe-scaler"><div class="mfp-close"></div><iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe><div class="mfp-title">Some caption</div></div>'},callbacks:{markupParse:function(e,a,s){a.title=s.el.attr("title")}}});
- $('.video').magnificPopup({
-  type: 'iframe',
-  
-  
-  iframe: {
-    patterns: {
-      dailymotion: {
-       
-        index: 'dailymotion.com',
-        
-        id: function(url) {        
-            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
-            if (m !== null) {
-                if(m[4] !== undefined) {
-                  
-                    return m[4];
-                }
-                return m[2];
-            }
-            return null;
-        },
-        
-        src: 'https://vimeo.com/205379223'
-        
-      }
+'use strict';
+//hamburger menu
+(function() {
+    var body = document.body;
+    var burgerMenu = document.getElementsByClassName('b-menu')[0];
+    var burgerContain = document.getElementsByClassName('b-container')[0];
+    var burgerNav = document.getElementsByClassName('b-nav')[0];
+    burgerMenu.addEventListener('click', function toggleClasses() {
+        [body, burgerContain, burgerNav].forEach(function (el) {
+            el.classList.toggle('open');
+        });
+    }, false);
+})();
+
+// Scroll Events
+$(window).scroll(function(){
+    if($(window).scrollTop() > 100) {
+        $('#navigation').css({ background:'#4B4A45'});
+    } else{
+        $('#navigation').css('background','transparent');
     }
-  }
-  
-  
 });
+
+//slick слайдер
+$('.sl').slick({
+    autoplay: true,
+    autoplaySpeed:3000,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});
+
+//counter
+var div_top = $('article').offset().top;
+$(window).scroll(function(){
+    if($(window).scrollTop() > div_top){
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text()}).animate({
+                    countNum: countTo
+                },
+
+                {
+
+                    duration: 8000,
+                    easing:'linear',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+
+                });
+
+
+
+        });
+    }
+});
+
+//Back To Top Button
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('#back-top').fadeIn();
+    } else {
+        $('#back-top').fadeOut();
+    }
+});
+$('#back-top').click(function(){
+    $('html, body').animate({scrollTop:$('header').position().top}, 1500);
+});
+
+
+$( document ).ready(function() {
+    $('.project').addClass('active');
+    $(".title").click(function(e) {
+        $(".title").removeClass('active');
+        $(this).addClass('active');
+        if ($(this).data('target') == 'all') {
+            $('.project').addClass('active');
+        } else {
+            $('.project.active').removeClass('active');
+            $('.project.' + $(this).data('target')).addClass('active');
+        }
+    })
+})

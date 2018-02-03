@@ -457,7 +457,7 @@ section.screenContent .screen .screenActive {
   display: inline-flex;
   margin: 5px 0;
 }
-.portfolio .button a {
+.portfolio .button .title {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -471,26 +471,18 @@ section.screenContent .screen .screenActive {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-  font-family: Montserrat, sans-serif;
   color: #8c8c8c;
   font-size: 14px;
   font-weight: 300;
   line-height: 21px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   border: 1px solid #ebebeb;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 10px 20px;
   margin: 10px 5px;
-}
-.portfolio .button a:first-child {
-  padding: 10px 28px;
-}
-.portfolio .button a:hover {
-  background-color: #998675;
-  color: #fff;
-  border: 1px solid #998675;
+  outline: none;
+  cursor: pointer;
 }
 .portfolio .projectGroup {
   display: -webkit-box;
@@ -507,6 +499,7 @@ section.screenContent .screen .screenActive {
 .portfolio .projectGroup .project {
   background-color: #fbfaf8;
   margin: 15px;
+  display: none;
 }
 .portfolio .projectGroup .project .picture {
   position: relative;
@@ -561,6 +554,14 @@ section.screenContent .screen .screenActive {
   display: none;
 }
 .portfolio .projectGroup .project:hover .caption .arrowHover {
+  display: block;
+}
+.portfolio .title.active {
+  background-color: #998675;
+  color: #fff;
+  border: 1px solid #998675;
+}
+.portfolio .project.active {
   display: block;
 }
 .portfolio a.loadMore {

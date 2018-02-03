@@ -12,9 +12,6 @@
     }, false);
 })();
 
-
-
-
 // Scroll Events
 $(window).scroll(function(){
     if($(window).scrollTop() > 100) {
@@ -23,7 +20,6 @@ $(window).scroll(function(){
         $('#navigation').css('background','transparent');
     }
 });
-
 
 //slick слайдер
 $('.sl').slick({
@@ -39,7 +35,6 @@ $('.sl').slick({
         }
     ]
 });
-
 
 //counter
 var div_top = $('article').offset().top;
@@ -73,7 +68,6 @@ $(window).scroll(function(){
     }
 });
 
-
 //Back To Top Button
 $(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
@@ -86,3 +80,17 @@ $('#back-top').click(function(){
     $('html, body').animate({scrollTop:$('header').position().top}, 1500);
 });
 
+
+$( document ).ready(function() {
+    $('.project').addClass('active');
+    $(".title").click(function(e) {
+        $(".title").removeClass('active');
+        $(this).addClass('active');
+        if ($(this).data('target') == 'all') {
+            $('.project').addClass('active');
+        } else {
+            $('.project.active').removeClass('active');
+            $('.project.' + $(this).data('target')).addClass('active');
+        }
+    })
+})

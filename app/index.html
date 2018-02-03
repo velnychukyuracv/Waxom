@@ -173,19 +173,19 @@
     <aside class="portfolio">
         <h2>Our Latest Projects.</h2>
         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br>processus dynamicus, qui sequitur mutationem consuetudium.</p>
-        <div class="button" id="isotope-filter">
-            <a href="#" type="button" data-filter="*" class="active ">all</a>
-            <a href="#" type="button" data-filter=".web-design" class=" ">web design</a>
-            <a href="#" type="button" data-filter=".mobile-ap" class=" ">mobile app</a>
-            <a href="#" type="button" data-filter=".illustration" class=" ">illustration</a>
-            <a href="#" type="button" data-filter=".photography" class=" ">photography</a>
+        <div class="button">
+            <input type="button" class="title all active" value="all" data-target="all">
+            <input type="button" class="title design" value="web design" data-target="design">
+            <input type="button" class="title mobile" value="mobile app" data-target="mobile">
+            <input type="button" class="title illustration" value="illustration" data-target="illustration">
+            <input type="button"  class="title photography" value="photography" data-target="photography">
         </div>
 
         <!--Projects-->
         <div class="projectGroup portfolio-wrap">
 
             <!--Projects 1-->
-             <div class="project web-design mobile-ap">
+             <div class="project design photography illustration">
                  <div class="picture">
                      <img src="img/project1.jpg" alt="Claritas Etiam Processus">
                  </div>
@@ -198,7 +198,7 @@
              </div>
 
             <!--Projects 2-->
-             <div class="project web-design mobile-ap">
+             <div class="project design mobile">
                    <div class="picture">
                        <img src="img/project2.jpg" alt="Quam Nutamus Farum">
                    </div>
@@ -211,7 +211,7 @@
              </div>
 
             <!--Projects 3-->
-             <div class="project illustration photography">
+             <div class="project mobile">
                    <div class="picture">
                        <img src="img/project3.jpg" alt="Usus Legentis Videntur">
                    </div>
@@ -224,7 +224,7 @@
              </div>
 
             <!--Projects 4-->
-             <div class="project illustration photography">
+             <div class="project mobile">
                     <div class="picture">
                         <img src="img/project4.jpg" alt="Claritas Etiam Processus">
                     </div>
@@ -237,7 +237,7 @@
              </div>
 
             <!--Projects 5-->
-             <div class="project web-design photography">
+             <div class="project illustration">
                     <div class="picture">
                         <img src="img/project5.jpg" alt="Quam Nutamus Farum">
                     </div>
@@ -250,7 +250,7 @@
              </div>
 
             <!--Projects 6-->
-             <div class="project web-design photography">
+             <div class="project illustration photography">
                     <div class="picture">
                         <img src="img/project6.jpg" alt="Usus Legentis Videntur">
                     </div>
@@ -503,7 +503,7 @@
  <script  type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
  <!-- Magnific Popup core JS file -->
- <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
 
  <!-- js -->
  <script  src="js/index.js"></script>

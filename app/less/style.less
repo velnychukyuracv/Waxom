@@ -378,30 +378,22 @@ section.screenContent{
   .button{
     display: inline-flex;
     margin: 5px 0;
-    a{
+    .title{
       background-color:  #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-decoration: none;
-      font-family: @font_Montserrat;
       color:  #8c8c8c;
       font-size: 14px;
       font-weight: 300;
       line-height: 21px;
-      text-transform: capitalize;
+      text-transform: uppercase;
       border: 1px solid #ebebeb;
       border-radius: 5px;
       padding: 10px 20px;
       margin: 10px 5px;
-    }
-    a:first-child{
-      padding: 10px 28px;
-    }
-    a:hover{
-      background-color:  #998675;
-      color: #fff;
-      border: 1px solid #998675;
+      outline: none;
+      cursor: pointer;
     }
   }
    /*group projects*/
@@ -412,6 +404,7 @@ section.screenContent{
      .project{
         background-color: #fbfaf8;
         margin: 15px;
+        display: none;
         .picture{
           position: relative;
         }
@@ -476,6 +469,14 @@ section.screenContent{
       }
     }
 
+  .title.active {
+    background-color:  #998675;
+    color: #fff;
+    border: 1px solid #998675;
+  }
+  .project.active {
+    display: block;
+  }
   a.loadMore {
     border: 1px solid #998675;
     border-radius: 5px;
