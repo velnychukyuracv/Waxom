@@ -450,14 +450,14 @@ section.screenContent .screen .screenActive {
   text-align: center;
   margin: 15px 0;
 }
-.portfolio .button {
+.portfolio .buttonGroup {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 5px 0;
 }
-.portfolio .button .title {
+.portfolio .buttonGroup .title {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;

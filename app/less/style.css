@@ -347,11 +347,11 @@ section.screenContent .screen .screenActive {
   text-align: center;
   margin: 15px 0;
 }
-.portfolio .button {
+.portfolio .buttonGroup {
   display: inline-flex;
   margin: 5px 0;
 }
-.portfolio .button .title {
+.portfolio .buttonGroup .title {
   background-color: #fff;
   display: flex;
   justify-content: center;
