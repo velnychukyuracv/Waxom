@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 
 //counter
-        var div_top = $('article').offset().top;
+        var div_top = $('.mobileInfo').offset().top;
         $(window).scroll(function(){
             if($(window).scrollTop() > div_top){
                 $('.counter').each(function() {

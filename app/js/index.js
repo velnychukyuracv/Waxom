@@ -57,19 +57,11 @@ $(document).ready(function() {
         });
 
 
-//Video popup
-        $('.popup').magnificPopup({
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-            url: 'https://vimeo.com/8844376'
-        });
+
 
 
 //counter
-        var div_top = $('article').offset().top;
+        var div_top = $('.mobileInfo').offset().top;
         $(window).scroll(function(){
             if($(window).scrollTop() > div_top){
                 $('.counter').each(function() {
