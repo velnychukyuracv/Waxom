@@ -57,15 +57,7 @@ $(document).ready(function() {
         });
 
 
-//Video popup
-        $('.popup').magnificPopup({
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-            url: 'https://vimeo.com/8844376'
-        });
+
 
 
 //counter
