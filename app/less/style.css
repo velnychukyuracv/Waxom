@@ -324,6 +324,7 @@ section.screenContent .screen .screenActive {
 /*Portfolio start*/
 .portfolio {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -348,7 +349,10 @@ section.screenContent .screen .screenActive {
   margin: 15px 0;
 }
 .portfolio .buttonGroup {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 5px 0;
 }
 .portfolio .buttonGroup .title {

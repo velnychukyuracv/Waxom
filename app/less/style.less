@@ -125,7 +125,6 @@ header{
         border: 1px solid #ac9b87 ;
       }
 
-
       .sl_slide {
         border: none;
         display: flex;
@@ -354,6 +353,7 @@ section.screenContent{
 /*Portfolio start*/
 .portfolio{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -376,7 +376,10 @@ section.screenContent{
   }
   /*button group*/
   .buttonGroup{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 5px 0;
     .title{
       background-color:  #fff;
@@ -1638,6 +1641,7 @@ footer{
   /*portfolio*/
   .portfolio{
     padding: 2%;
+
     h2{
       font-size: 25px;
       margin: 60px 0 10px;

@@ -57,9 +57,6 @@ $(document).ready(function() {
         });
 
 
-
-
-
 //counter
         var div_top = $('.mobileInfo').offset().top;
         $(window).scroll(function(){
@@ -90,6 +87,7 @@ $(document).ready(function() {
             }
         });
 
+
 //Back To Top Button
         $(window).scroll(function () {
             if ($(this).scrollTop() > 150) {
@@ -98,6 +96,7 @@ $(document).ready(function() {
                 $('#back-top').fadeOut();
             }
         });
+
         $('#back-top').click(function(){
             $('html, body').animate({scrollTop:$('header').position().top}, 1500);
         });
